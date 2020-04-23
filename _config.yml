@@ -22,7 +22,7 @@ title: Luis' blog
 email: luiscostigan7@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Data science, Effective Altruism Japan.
-baseurl: "/blog" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://valencia21.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: luiscostigan1
 github_username:  valencia21
