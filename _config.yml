@@ -28,7 +28,7 @@ twitter_username: luiscostigan1
 github_username:  valencia21
 
 # Build settings
-remote-theme: minimal-mistakes-jekyll
+theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-feed
 
