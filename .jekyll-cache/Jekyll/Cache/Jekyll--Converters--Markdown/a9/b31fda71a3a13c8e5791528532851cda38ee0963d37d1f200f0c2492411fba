@@ -1,0 +1,51 @@
+I"=<p>Making a Python dict of Japanese - English prefecture names available below.</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="p">{</span><span class="s">'北海道'</span><span class="p">:</span> <span class="s">'Hokkaido'</span><span class="p">,</span>
+ <span class="s">'青森県'</span><span class="p">:</span> <span class="s">'Aomori'</span><span class="p">,</span>
+ <span class="s">'岩手県'</span><span class="p">:</span> <span class="s">'Iwate'</span><span class="p">,</span>
+ <span class="s">'宮城県'</span><span class="p">:</span> <span class="s">'Miyagi'</span><span class="p">,</span>
+ <span class="s">'秋田県'</span><span class="p">:</span> <span class="s">'Akita'</span><span class="p">,</span>
+ <span class="s">'山形県'</span><span class="p">:</span> <span class="s">'Yamagata'</span><span class="p">,</span>
+ <span class="s">'福島県'</span><span class="p">:</span> <span class="s">'Fukushima'</span><span class="p">,</span>
+ <span class="s">'茨城県'</span><span class="p">:</span> <span class="s">'Ibaraki'</span><span class="p">,</span>
+ <span class="s">'栃木県'</span><span class="p">:</span> <span class="s">'Tochigi'</span><span class="p">,</span>
+ <span class="s">'群馬県'</span><span class="p">:</span> <span class="s">'Gunma'</span><span class="p">,</span>
+ <span class="s">'埼玉県'</span><span class="p">:</span> <span class="s">'Saitama'</span><span class="p">,</span>
+ <span class="s">'千葉県'</span><span class="p">:</span> <span class="s">'Chiba'</span><span class="p">,</span>
+ <span class="s">'東京都'</span><span class="p">:</span> <span class="s">'Tokyo'</span><span class="p">,</span>
+ <span class="s">'神奈川県'</span><span class="p">:</span> <span class="s">'Kanagawa'</span><span class="p">,</span>
+ <span class="s">'新潟県'</span><span class="p">:</span> <span class="s">'Niigata'</span><span class="p">,</span>
+ <span class="s">'富山県'</span><span class="p">:</span> <span class="s">'Toyama'</span><span class="p">,</span>
+ <span class="s">'石川県'</span><span class="p">:</span> <span class="s">'Ishikawa'</span><span class="p">,</span>
+ <span class="s">'福井県'</span><span class="p">:</span> <span class="s">'Fukui'</span><span class="p">,</span>
+ <span class="s">'山梨県'</span><span class="p">:</span> <span class="s">'Yamanashi'</span><span class="p">,</span>
+ <span class="s">'長野県'</span><span class="p">:</span> <span class="s">'Nagano'</span><span class="p">,</span>
+ <span class="s">'岐阜県'</span><span class="p">:</span> <span class="s">'Gifu'</span><span class="p">,</span>
+ <span class="s">'静岡県'</span><span class="p">:</span> <span class="s">'Shizuoka'</span><span class="p">,</span>
+ <span class="s">'愛知県'</span><span class="p">:</span> <span class="s">'Aichi'</span><span class="p">,</span>
+ <span class="s">'三重県'</span><span class="p">:</span> <span class="s">'Mie'</span><span class="p">,</span>
+ <span class="s">'滋賀県'</span><span class="p">:</span> <span class="s">'Shiga'</span><span class="p">,</span>
+ <span class="s">'京都府'</span><span class="p">:</span> <span class="s">'Kyoto'</span><span class="p">,</span>
+ <span class="s">'大阪府'</span><span class="p">:</span> <span class="s">'Osaka'</span><span class="p">,</span>
+ <span class="s">'兵庫県'</span><span class="p">:</span> <span class="s">'Hyogo'</span><span class="p">,</span>
+ <span class="s">'奈良県'</span><span class="p">:</span> <span class="s">'Nara'</span><span class="p">,</span>
+ <span class="s">'和歌山県'</span><span class="p">:</span> <span class="s">'Wakayama'</span><span class="p">,</span>
+ <span class="s">'鳥取県'</span><span class="p">:</span> <span class="s">'Tottori'</span><span class="p">,</span>
+ <span class="s">'島根県'</span><span class="p">:</span> <span class="s">'Shimane'</span><span class="p">,</span>
+ <span class="s">'岡山県'</span><span class="p">:</span> <span class="s">'Okayama'</span><span class="p">,</span>
+ <span class="s">'広島県'</span><span class="p">:</span> <span class="s">'Hiroshima'</span><span class="p">,</span>
+ <span class="s">'山口県'</span><span class="p">:</span> <span class="s">'Yamaguchi'</span><span class="p">,</span>
+ <span class="s">'徳島県'</span><span class="p">:</span> <span class="s">'Tokushima'</span><span class="p">,</span>
+ <span class="s">'香川県'</span><span class="p">:</span> <span class="s">'Kagawa'</span><span class="p">,</span>
+ <span class="s">'愛媛県'</span><span class="p">:</span> <span class="s">'Ehime'</span><span class="p">,</span>
+ <span class="s">'高知県'</span><span class="p">:</span> <span class="s">'Kochi'</span><span class="p">,</span>
+ <span class="s">'福岡県'</span><span class="p">:</span> <span class="s">'Fukuoka'</span><span class="p">,</span>
+ <span class="s">'佐賀県'</span><span class="p">:</span> <span class="s">'Saga'</span><span class="p">,</span>
+ <span class="s">'長崎県'</span><span class="p">:</span> <span class="s">'Nagasaki'</span><span class="p">,</span>
+ <span class="s">'熊本県'</span><span class="p">:</span> <span class="s">'Kumamoto'</span><span class="p">,</span>
+ <span class="s">'大分県'</span><span class="p">:</span> <span class="s">'Oita'</span><span class="p">,</span>
+ <span class="s">'宮崎県'</span><span class="p">:</span> <span class="s">'Miyazaki'</span><span class="p">,</span>
+ <span class="s">'鹿児島県'</span><span class="p">:</span> <span class="s">'Kagoshima'</span><span class="p">,</span>
+ <span class="s">'沖縄県'</span><span class="p">:</span> <span class="s">'Okinawa'</span><span class="p">}</span></code></pre></figure>
+
+:ET
