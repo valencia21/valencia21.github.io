@@ -2,7 +2,7 @@
 layout: post
 title:  "Python Dictionary for Japanese - English Prefecture Names"
 date:   2020-04-24 20:14:28 +0900
-categories: jekyll update
+categories:
 ---
 Making a Python dict of Japanese - English prefecture names available below..
 
