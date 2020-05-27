@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Building a Stock Price Dictionary with Dash"
+title:  "Building a Dynamic Stock Chart with Dash"
 date:   2020-05-27 23:09:30 +0900
 categories:
 ---
 
-The project described below was part of the Interactive Python Dashboards with Plotly and Dash course available on Udemy.
+The project described below was part of the [Interactive Python Dashboards with Plotly and Dash](https://www.udemy.com/course/interactive-python-dashboards-with-plotly-and-dash/) course available on Udemy.
 
 ## Background
 
