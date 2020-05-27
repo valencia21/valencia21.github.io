@@ -127,7 +127,7 @@ def update_graph(n_clicks,value,start_date,end_date):
 
 ## Final Product
 
-![Final Product](/assets/img/Screen%20Shot%202020-05-27%20at%2023.00.25.png)
+![Final Product](../assets/img/stocks_dashboard.png)
 
 That’s it!
 
