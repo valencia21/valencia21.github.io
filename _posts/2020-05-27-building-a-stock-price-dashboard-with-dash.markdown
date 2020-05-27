@@ -9,22 +9,22 @@ The project described below was part of the [Interactive Python Dashboards with 
 
 ## Background
 
-I have a fair amount of experience building out user-friendly dashboards with platforms such as Tableau, DOMO and Adobe Analytics (for web data). These platforms already come with a suite of tools to link data sources, lay out data in a readable format (like a relational database/CSV) and provide reader-friendly visualizations.
+I have a fair amount of experience building out dashboards with platforms such as Tableau, DOMO and Adobe Analytics (for web data). These platforms already come with a suite of tools to link data sources, contain data in a format appropriate for analysis (like a relational database/CSV) and provide reader-friendly visualizations.
 
 These platforms have a couple of issues:
 
 * They have expensive recurring subscription costs
 * Their ease of use comes at the cost of decreased flexibility. If the tool doesn’t allow you to display information in a certain way, you’re either stuck or have to apply a patch work solution.
 
-Enter Dash, a Python framework for data visualization apps provided by Plotly (the company that created the eponymous data visualization library). It can create really flexible dashboards and data can be acquired and wrangled using any library available in Python.
+Enter Dash, a Python framework for data visualization apps provided by Plotly (the company that created the eponymous data visualization library). It can create really flexible dashboards and data can be acquired/wrangled using any library available in Python.
 
 Dash uses a combination of Plotly, React (a Javascript library for UI) and Flask (a web app framework). You can certainly learn as you go, but it helps to have some experience with data visualization in Python and web app deployment/design to implement Dash apps.
 
 ## Task
 
-Create a dashboard that allows users to search for a ticker or company name (or multiple), set a time period, and display the closing prices in a time series.
+Create a dashboard that allows users to search for one or more tickers or company names, set a time period, and display the closing prices in a time series.
 
-The graph should only update once the companies and time period have been selected and the “Submit” button is clicked.
+The graph should only update once the tickers and time period have been selected and the “Submit” button is clicked.
 
 ### Features
 
@@ -40,6 +40,10 @@ The graph should only update once the companies and time period have been select
 * IEX Cloud + iexfinance (Python wrapper)
 
 ## Implementation
+
+Here's the finished prototype displaying stock prices for 3 tickers.
+
+![Final Product](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/stocks_dashboard.png)
 
 ### Layout and Styling
 
@@ -78,7 +82,7 @@ app.layout = html.Div([
 
 ### Linking the Inputs to the Visualization
 
-Visualizations are updated in Dash using “callbacks”. These callbacks define an output div and value (such as a graph), and an input div and value (such as a selection from a drop down menu).
+Visualizations are updated in Dash using “callbacks”. These callbacks define an output div and value (the div containing the visualization and the values it should interpret), and an input div and value (such as a selection from a drop down menu).
 
 If we want to wait until an event occurs (such as clicking a button) before updating a visualization, the event itself counts as the input and other divs/values are recorded in the callback “state”.
 
@@ -97,7 +101,7 @@ As part of the implementation of the submit button, we first raise a PreventUpda
 
 As soon as a click event occurs, we iterate through each value in the search box (remember the tickers and company names were kept as a key, value pair) and grab the stock price within the dates chosen using the get_historical_value method from the iexfinance wrapper.
 
-For each value this returns a pandas dataframe that contains the starting price, high/low and closing price, so we just plot the  “close” column on the y-axis.
+For each value this returns a pandas dataframe that contains the starting price, high/low price and closing price, so we just plot the closing price column on the y-axis.
 
 We also update the graph title to show the stock name.
 
@@ -125,9 +129,7 @@ def update_graph(n_clicks,value,start_date,end_date):
     return fig
 {% endhighlight %}
 
-## Final Product
-
-![Final Product](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/stocks_dashboard.png)
+## Final Words
 
 That’s it!
 
