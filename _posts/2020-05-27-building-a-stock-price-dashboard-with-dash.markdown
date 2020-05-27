@@ -127,7 +127,7 @@ def update_graph(n_clicks,value,start_date,end_date):
 
 ## Final Product
 
-![Final Product](/Users/luiscostiganjapan/Documents/GitHub/valencia21.github.io/_site/assets/img/Screen Shot 2020-05-27 at 23.00.25.png)
+![Final Product](https://github.com/valencia21/valencia21.github.io/blob/master/_site/assets/img/Screen%20Shot%202020-05-27%20at%2023.00.25.png)
 
 That’s it!
 
