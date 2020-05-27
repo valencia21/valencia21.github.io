@@ -127,7 +127,7 @@ def update_graph(n_clicks,value,start_date,end_date):
 
 ## Final Product
 
-![Final Product](../assets/img/stocks_dashboard.png)
+![Final Product](https://github.com/valencia21/valencia21.github.io/blob/master/_site/assets/img/stocks_dashboard.png)
 
 That’s it!
 
