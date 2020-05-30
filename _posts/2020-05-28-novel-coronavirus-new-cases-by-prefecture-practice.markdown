@@ -85,7 +85,10 @@ After combining data from the data sources described into a single data frame, I
 * The historical gender ratio of cases in each prefecture (until the day being predicted)
 * The historical mean age of cases in each prefecture (until the day being predicted)
 
+In the image below, the "2020-04-19 Cases" column is the dependent variable.
+
 ![5](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/05-30-05.png)
+
 
 I used a 70 to 30 train/test split, training on 22 prefectures and predicting for 10.
 
