@@ -32,13 +32,6 @@ Build a predictor in Python using the sklearn library to estimate the number of 
 The model should use a combination of historical case counts and other features  
 "engineered" from the data.
 
-### Features
-
-* Search bar (possible to select more than one item)
-* Calendar to set time period
-* Submit button
-* Line chart
-
 ## Tools used
 
 * Numpy, Pandas, Matplotlib, sklearn
