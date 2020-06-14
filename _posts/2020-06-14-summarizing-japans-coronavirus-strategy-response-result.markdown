@@ -238,7 +238,7 @@ A number of measures have been taken to prevent spread in brick-and-mortar locat
 
 Below is an image of mexican restaurant Guzman y Gomez in Shibuya, which was partly open inside but conducted most of its business as a take away outlet with this makeshift counter:
 
-![GyG](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/GyG.jpg =400x)
+![GyG](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/GyG.jpg){: width=400}
 
 This pamphlet was also delivered to my letterbox outlining the various preventative measures taken by a local pachinko parlour:
 
