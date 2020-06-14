@@ -61,9 +61,8 @@ Experts in Japan theorized further that superspreader events were much more like
 2. Crowded places with many people nearby
 3. Close-contact settings that facilitate close range conversations.
 
-![3Cs EN](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/3Cs EN.png)
 
-![3Cs JP](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/Flu vs COVID-19 Spread.png)
+![3Cs EN](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/3Cs EN.png)![3Cs JP](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/3Cs JP.png)
 
 High-risk locations were identified after finding that the first clusters in Japan were formed in places such as fitness gyms, restaurants and hospitals.
 
@@ -239,11 +238,11 @@ A number of measures have been taken to prevent spread in brick-and-mortar locat
 
 Below is an image of mexican restaurant Guzman y Gomez in Shibuya, which was partly open inside but conducted most of its business as a take away outlet with this makeshift counter:
 
-![GyG](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/GyG.png)
+![GyG](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/GyG.jpg)
 
 This pamphlet was also delivered to my letterbox outlining the various preventative measures taken by a local pachinko parlour:
 
-![Pachinko Pamphlet](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/Pachinko Pamphlet.png)
+![Pachinko Pamphlet](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/Pachinko Pamphlet.jpg)
 
 
 Measures here include:
