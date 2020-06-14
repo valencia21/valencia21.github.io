@@ -61,8 +61,9 @@ Experts in Japan theorized further that "superspreader" events were much more li
 2. Crowded places with many people nearby
 3. Close-contact settings that facilitate close range conversations.
 
-
+{:refdef: style="text-align: center; padding-right:20px"}
 ![3Cs EN](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/3Cs EN.png){: height="500px" width="350px" style="text-align:center; padding-right:20px}![3Cs JP](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/3Cs JP.jpg){: height="500px" width="350px" style="text-align:center"}
+{: refdef}
 
 High-risk locations were identified after finding that the first clusters in Japan were formed in places such as fitness gyms, restaurants and hospitals.
 
