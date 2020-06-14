@@ -5,6 +5,9 @@ date:   2020-06-14 17:00:00 +0900
 categories:
 ---
 
+* Do not remove this line (it will not be displayed)
+{:toc}
+
 As of June 13th 2020, Japan appears to have successfully controlled the spread of the novel coronavirus. Noone is sure exactly why.
 
 This blog post is a rough summary of the factors at play, digging a little deeper into the evidence and providing additional reading material where appropriate.
