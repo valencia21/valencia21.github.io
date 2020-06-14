@@ -8,6 +8,7 @@ categories:
 * Do not remove this line (it will not be displayed)
 {:toc}
 
+
 As of June 13th 2020, Japan appears to have successfully controlled the spread of the novel coronavirus. Noone is sure exactly why.
 
 This blog post is a rough summary of the factors at play, digging a little deeper into the evidence and providing additional reading material where appropriate.
@@ -39,13 +40,13 @@ I tweeted my translation of the official strategy doc [here](https://twitter.com
 The Japanese government created a task force that tried to grasp the origin of clusters and prevent spread by:
 
 1. Detecting outbreaks of patient clusters
-Identifying group outbreaks at an early stage through notifications from hospitals/clinics.
+- Identifying group outbreaks at an early stage through notifications from hospitals/clinics.
 
 2. Searching for the infection origin/route
-Conducting a focused investigation starting with the infected person to understand how the infection may have spread.
+- Conducting a focused investigation starting with the infected person to understand how the infection may have spread.
 
 3. Implementing measures to prevent spread
-Health monitoring of those who came into close contact with the patient and requesting that they self-isolate voluntarily. Companies and other establishments related to the patient will also be requested to close and cancel activities such as events.
+- Health monitoring of those who came into close contact with the patient and requesting that they self-isolate voluntarily. Companies and other establishments related to the patient will also be requested to close and cancel activities such as events.
 
 ### Why focus on clusters?
 
@@ -64,15 +65,17 @@ Experts in Japan theorized further that "superspreader" events were much more li
 2. Crowded places with many people nearby
 3. Close-contact settings that facilitate close range conversations.
 
+
 {:refdef: style="text-align: center;"}
 ![3Cs EN](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/3Cs EN.png){: height="500px" width="350px" style="text-align:center; padding-right:20px}![3Cs JP](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/3Cs JP.jpg){: height="500px" width="350px" style="text-align:center"}
 {: refdef}
+
 
 High-risk locations were identified after finding that the first clusters in Japan were formed in places such as fitness gyms, restaurants and hospitals.
 
 #### Is there any further evidence that certain locations facilitate spread more than others?
 
-It is common sense to expect places that meet the 3Cs to be particularly high risk. The least intuitive part is that a location can meet conditions 1 & 2, but the absence of face-to-face contact and active conversation in condition 3 can have such a suppressing effect on transmission. Here is a good explanation of why this actually may be quite intuitive, under the heading: “[Risks Follow Power Laws](https://www.lesswrong.com/posts/P7crAscAzftdE7ffv/covid-19-my-current-model#Risks_Follow_Power_Laws)”.
+It is common sense to expect places that meet the 3Cs to be particularly high risk. It is less intuitive for a location to meet conditions 1 & 2, but the absence of face-to-face contact and active conversation in condition 3 to have such a suppressing effect on transmission. Here is a good explanation of why this actually may be quite intuitive, under the heading: “[Risks Follow Power Laws](https://www.lesswrong.com/posts/P7crAscAzftdE7ffv/covid-19-my-current-model#Risks_Follow_Power_Laws)”.
 
 The fact that all 3 conditions must be met was picked up in Japan early, noting that packed trains do not typically facilitate clusters since people are generally wearing masks and not talking to each other. As a resident of Japan for 8 years, I can verify that talking on your phone or even friends in a loudish voice on a train is somewhat taboo.
 
@@ -94,6 +97,8 @@ Dr. Cassidy Nelson, who studies catastrophic biological risks at the Future of H
 
 3. If a country already has a number of cases (such as Japan at 17,000+ cases as of June 8th 2020), there is already a high degree of person-to-person transmission. Opening up travel would only account for a small % of cases even if no preventative measures are taken.
 
+Closing Japan off temporarily was a good move when dealing with such high degrees of uncertainty at the beginning of the pandemic. Going forward, I'm not convinced it would achieve much of a positive outcome.
+
 ### A lack of testing?
 
 Many outside observers initially raised concerns that Japan wasn’t testing enough and a number of actual cases may not be accurately portrayed in official numbers.
@@ -107,17 +112,19 @@ A relative lack of deaths in Japan suggests that concerns in March that many cas
 No test is 100% perfect. Current literature suggests that PCR tests have low-moderate sensitivity (around 70%) but high specificity (around 95%).
 A test with low sensitivity will fail to detect actual cases, while low specificity will produce positives where there is no infection.
 
-I tweeted a summary translation of a report of cases from the Diamond Princess [here](https://twitter.com/LuisCostigan1/status/1242850707461402624), which included some information on low PCR test sensitivity. More evidence can be found [here](https://pubs.rsna.org/doi/10.1148/radiol.2020200642) and [here](https://www.bmj.com/content/bmj/369/bmj.m1808.full.pdf).
+Back in March I tweeted a [summary translation](https://twitter.com/LuisCostigan1/status/1242850707461402624) of a report of cases from the Diamond Princess, which included some information on low PCR test sensitivity. More evidence for low sensitivity can be found [here](https://pubs.rsna.org/doi/10.1148/radiol.2020200642) and [here](https://www.bmj.com/content/bmj/369/bmj.m1808.full.pdf).
 
-Even though 95% sensitivity is considered high, a comprehensive testing program of 100,000 tests per day would still detect 5,000 cases where there are none. Setting to one side the burden of dealing with these cases, you would also add so much noise to the signal required to conduct the aforementioned “counter-cluster” strategy that it may be rendered ineffective.
+As for specificity, 95% is considered high. However, a comprehensive testing program of 100,000 tests per day would still detect 5,000 cases where there are none. Setting to one side the burden of dealing with these cases in various medical institutions, you would also add so much noise to the signal required to conduct the aforementioned “counter-cluster” strategy that it may be rendered ineffective.
 
 ### Data availability and accuracy
 
 Testing in Japan was conducted by a mix of public hospitals/medical facilities and private facilities. Data provided by the Ministry of Health, Labour and Welfare (MHLW) only took into account figures reported by public facilities.
 
-In Tokyo, that changed in early May when [data for all institutions was released dating back to January](https://www.japantimes.co.jp/news/2020/05/09/national/tokyo-releases-covid-19-data/#.XuS9e8ZS-Aw). I’m unsure how this affected overall figures.
+In Tokyo, that changed in early May when [data for all institutions was released dating back to January](https://www.japantimes.co.jp/news/2020/05/09/national/tokyo-releases-covid-19-data/#.XuS9e8ZS-Aw). I’m unsure how the integration of this data affected overall figures.
 
 Other than data provided by the MHLW, a dashboard containing case data from regular media reports can be found [here](https://covid19japan.com/) (see dashboard details for data source info).
+
+As with much COVID-19 data globally, Japan's data is fragmented and difficult to interpret.
 
 ## Declaring a State of Emergency
 
@@ -125,9 +132,9 @@ Other than data provided by the MHLW, a dashboard containing case data from regu
 
 While some countries were able to order curfews and ban events in a legally enforceable way, Japan’s constitution does not allow this:
 
-“Freedom of assembly and association as well as speech, press and all other forms of expression are guaranteed."
+*“Freedom of assembly and association as well as speech, press and all other forms of expression are guaranteed."*
 
-However, Japan does have a “Novel Influenza Etc Special Measures Law” that enhances government power during a pandemic. Through this law, the government can request (Japanese: 要請, yōsei) the public and businesses to take certain measures.
+However, Japan does have a “Novel Influenza Etc Special Measures Law” that enhances government power during a pandemic. Through this law, the government can request (Japanese: 要請, *yōsei*) the public and businesses to take certain measures.
 
 The Japanese word here is a strong word coming from the government, and under the Special Measures Law, failure to comply with some requests can result in government action.
 
@@ -197,6 +204,7 @@ The complete official guidelines in English for lifting the state of emergency c
 
 The Japanese government is expecting to cycle through periods of a state of emergency as required in an effort to flatten the curve and expand medical capacity/counter-cluster strategy resources.
 
+
 ![SoE End](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/SoE End.png){: style="text-align:center"}
 
 ### What stops individuals/businesses from acting as normal in the absence of a legal threat?
@@ -205,13 +213,13 @@ As noted by many other commentators, there are strong norms around not being a b
 
 In addition, if the government makes official recommendations to engage or disengage in certain behaviours, the population tends to take such recommendations seriously.
 
-While some businesses were also requested to close, it is interesting to note that they have no legal requirement to do so. If a request is ignored, the subsequent recourse is to issue a stronger instruction (Japanese: 指示, shiji) or even publicly announce the offending establishment in an effort to tarnish its reputation (note [this story](https://www.news24.jp/articles/2020/05/12/07641371.html) naming 20 pachinko parlours in Kanagawa prefecture). [This article](https://www.nli-research.co.jp/report/detail/id=64284?site=nli) speculates on whether or not there is a legal precedent to levying fines or stronger legal measures against nonconforming businesses.
+While some businesses were also requested to close, it is interesting to note that they have no legal requirement to do so. If a request is ignored, the subsequent recourse is to issue a stronger *instruction* (Japanese: 指示, *shiji*) or even publicly announce the offending establishment in an effort to tarnish its reputation (note [this story](https://www.news24.jp/articles/2020/05/12/07641371.html) naming 20 pachinko parlours in Kanagawa prefecture). [This article](https://www.nli-research.co.jp/report/detail/id=64284?site=nli) speculates on whether or not there is a legal precedent to levying fines or stronger legal measures against nonconforming businesses.
 
 ## What did the Japanese population do in practice?
 
 ### Mask Wearing
 
-While masks were quite scarce in February/early March, they are now pretty widely available.
+While masks were quite scarce in February/early March, they are now widely available.
 Social scientist Stefan Heeb has been [tracking mask usage on Tokyo's Yamanote Line](https://twitter.com/Svaphe/status/1256150775840960513). He found that mask wearing has been steadily increasing, now up to 96% (n=529).
 
 {:refdef: style="text-align: center;"}
@@ -220,9 +228,9 @@ Social scientist Stefan Heeb has been [tracking mask usage on Tokyo's Yamanote L
 
 #### Does wearing a mask help?
 
-Despite confusing advice from WHO at the start of the outbreak, evidence has pointed towards masks having a large effect on preventing infection. A <a href="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(20)31142-9/fulltext">meta-analysis of ten studies with results related to mask wearing</a> published in Lancet (June 1st, 2020) states:
+Despite conflicting advice from WHO at the start of the outbreak, evidence has pointed somewhat towards masks having a large effect on preventing infection. A <a href="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(20)31142-9/fulltext">meta-analysis of ten studies with results related to mask wearing</a> published in Lancet (June 1st, 2020) states:
 
-“Medical or surgical face masks might result in a large reduction in virus infection; N95 respirators might be associated with a larger reduction in risk compared with surgical or similar masks.”
+*“Medical or surgical face masks might result in a large reduction in virus infection; N95 respirators might be associated with a larger reduction in risk compared with surgical or similar masks.”*
 
 It is worth pointing out that this finding was stated with a low degree of certainty, the effect of mask wearing could be quite different.
 
@@ -286,6 +294,8 @@ New York County shows a drop to -67% relative to baseline:
 {:refdef: style="text-align: center;"}
 ![New York County Mobility](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/New York County Mobility.png){: style="text-align:center"}
 {: refdef}
+
+This suggests that public transport and offices are still being used frequently without too much of an effect on spread.
 
 ### Continued use of places that didn’t meet the 3Cs.
 
