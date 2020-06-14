@@ -53,7 +53,7 @@ Analysis of the first few cases in Japan indicated that while most people infect
 
 ![Flu vs COVID-19 Spread](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/Flu vs COVID-19 Spread.png){: style="text-align:center"}
 
-#### Is there any further evidence that COVID-19 actually spreads in this way?
+#### Is there any further evidence that COVID-19 spreads in this way?
 
 In addition to the now well-known *R* (reproduction number) measure, scientists also use a value called the dispersion factor *k*. A lower *k* value indicates a smaller number of people contributing to total transmission.
 There is some evidence that *k* is low for COVID-19 summarized [here](https://www.sciencemag.org/news/2020/05/why-do-some-covid-19-patients-infect-many-others-whereas-most-don-t-spread-virus-all).
@@ -84,7 +84,7 @@ Like many countries, Japan implemented a widespread [travel ban](https://www.jap
 
 In addition, anyone who is able to land must take a PCR test upon entry and be quarantined in a location specified by the quarantine station chief for 14 days. They are also requested to refrain from using public transport.
 
-#### Are travel bans effective for controlling the spread?
+#### Are travel bans effective at controlling spread?
 
 Dr. Cassidy Nelson, who studies catastrophic biological risks at the Future of Humanity Institute, suggests the following on travel bans (summarised nicely [here](https://unherd.com/thepost/travels-bans-dont-work/)):
 
@@ -131,7 +131,7 @@ However, Japan does have a “Novel Influenza Etc Special Measures Law” that e
 
 The Japanese word here is a strong word coming from the government, and under the Special Measures Law, failure to comply with some requests can result in government action.
 
-### So what is a State of Emergency?
+### What is a State of Emergency?
 
 I found it difficult to find exact information in Japanese or English on the precise definition of the state of emergency. As far as I can tell, it enables local governments to make requests as per the “Novel Influenza Etc Special Measures Law”.
 

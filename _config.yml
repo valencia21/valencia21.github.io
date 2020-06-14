@@ -12,4 +12,7 @@ theme: minima
 plugins:
   - jekyll-feed
 
+# Markdown Preprocessor
+markdown: kramdown
+
 # Exclude from processing.
