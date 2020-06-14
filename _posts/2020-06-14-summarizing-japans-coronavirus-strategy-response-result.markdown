@@ -13,11 +13,11 @@ This blog post is a rough summary of the factors at play, digging a little deepe
 
 According to data provided by the Financial Times (as of June 8th 2020), a total of 916 people have died with the cause attributed to COVID-19.
 
-![Japan Deaths](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/Japan Deaths.png)
+![Japan Deaths](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/Japan Deaths.png){: style="text-align:center"}
 
 This equates to 7.2 deaths per million.
 
-![Japan Deaths per Million](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/Japan Deaths per Million.png)
+![Japan Deaths per Million](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/Japan Deaths per Million.png){: style="text-align:center"}
 
 While Japan’s result compares very favourably with that of some western countries, it is quite typical of Asian countries. Japan has performed far worse than countries such as Taiwan (now 7 recorded deaths) and Vietnam (still 0 recorded deaths).
 
@@ -48,21 +48,21 @@ Health monitoring of those who came into close contact with the patient and requ
 
 Analysis of the first few cases in Japan indicated that while most people infected would not pass on the infection to others, a few would go on to infect many others in a so-called “superspreader” event.
 
-![Flu vs COVID-19 Spread](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/Flu vs COVID-19 Spread.png)
+![Flu vs COVID-19 Spread](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/Flu vs COVID-19 Spread.png){: style="text-align:center"}
 
 #### Is there any further evidence that COVID-19 actually spreads in this way?
 
 In addition to the now well-known *R* (reproduction number) measure, scientists also use a value called the dispersion factor *k*. A lower *k* value indicates a smaller number of people contributing to total transmission.
 There is some evidence that *k* is low for COVID-19 summarized [here](https://www.sciencemag.org/news/2020/05/why-do-some-covid-19-patients-infect-many-others-whereas-most-don-t-spread-virus-all).
 
-Experts in Japan theorized further that superspreader events were much more likely to occur in places that met the 3 conditions below:
+Experts in Japan theorized further that "superspreader" events were much more likely to occur in places that met the 3 conditions below:
 
 1. Closed spaces with poor ventilation
 2. Crowded places with many people nearby
 3. Close-contact settings that facilitate close range conversations.
 
 
-![3Cs EN](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/3Cs EN.png){: height="500px" width="350px"}![3Cs JP](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/3Cs JP.jpg){: height="500px" width="350px"}
+![3Cs EN](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/3Cs EN.png){: height="500px" width="350px" style="text-align:center; padding-right:20px}![3Cs JP](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/3Cs JP.jpg){: height="500px" width="350px" style="text-align:center"}
 
 High-risk locations were identified after finding that the first clusters in Japan were formed in places such as fitness gyms, restaurants and hospitals.
 
@@ -193,7 +193,7 @@ The complete official guidelines in English for lifting the state of emergency c
 
 The Japanese government is expecting to cycle through periods of a state of emergency as required in an effort to flatten the curve and expand medical capacity/counter-cluster strategy resources.
 
-![SoE End](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/SoE End.png)
+![SoE End](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/SoE End.png){: style="text-align:center"}
 
 ### What stops individuals/businesses from acting as normal in the absence of a legal threat?
 
@@ -210,7 +210,7 @@ While some businesses were also requested to close, it is interesting to note th
 While masks were quite scarce in February/early March, they are now pretty widely available.
 Social scientist Stefan Heeb has been [tracking mask usage on Tokyo's Yamanote Line](https://twitter.com/Svaphe/status/1256150775840960513). He found that mask wearing has been steadily increasing, now up to 96% (n=529).
 
-![SH Train Masks](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/SH Train Masks.png)
+![SH Train Masks](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/SH Train Masks.png){: style="text-align:center"}
 
 #### Does wearing a mask help?
 
@@ -238,11 +238,11 @@ A number of measures have been taken to prevent spread in brick-and-mortar locat
 
 Below is an image of mexican restaurant Guzman y Gomez in Shibuya, which was partly open inside but conducted most of its business as a take away outlet with this makeshift counter:
 
-![GyG](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/GyG.jpg){: width="500px"}
+![GyG](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/GyG.jpg){: width="500px" style="text-align:center"}
 
 This pamphlet was also delivered to my letterbox outlining the various preventative measures taken by a local pachinko parlour:
 
-![Pachinko Pamphlet](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/Pachinko Pamphlet.jpg){: width="500px"}
+![Pachinko Pamphlet](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/Pachinko Pamphlet.jpg){: width="500px" style="text-align:center"}
 
 
 Measures here include:
@@ -262,15 +262,15 @@ In conjunction with the “counter-cluster” strategy, certain establishments l
 
 Tokyo has seen a reduction as much as 80% in commuting to the office during the periods of the state of emergency, but now sits around -28% relative to baseline (as of June 6th, 2020):
 
-![Tokyo Mobility](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/Tokyo Mobility.png)
+![Tokyo Mobility](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/Tokyo Mobility.png){: style="text-align:center"}
 
 The same data for Greater London shows a more sustained drop, currently around -60% (as of June 6th, 2020):
 
-![Greater London Mobility](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/Greater London Mobility.png)
+![Greater London Mobility](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/Greater London Mobility.png){: style="text-align:center"}
 
 New York County shows a drop to -67% relative to baseline:
 
-![New York County Mobility](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/New York County Mobility.png)
+![New York County Mobility](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/New York County Mobility.png){: style="text-align:center"}
 
 
 ### Continued use of places that didn’t meet the 3Cs.
