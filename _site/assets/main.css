@@ -274,4 +274,19 @@ table td { border: 1px solid #e8e8e8; }
 
 .highlight .il { color: #099; }
 
+/** TOC */
+// Adding 'Contents' headline to the TOC
+#markdown-toc::before {
+    content: "Contents";
+    font-weight: bold;
+}
+
+#markdown-toc {
+    border: 1px solid #aaa;
+    padding: 1.5em;
+    list-style: decimal;
+    display: inline-block;
+}
+
+
 /*# sourceMappingURL=main.css.map */
