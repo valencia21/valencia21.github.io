@@ -61,7 +61,7 @@ Experts in Japan theorized further that "superspreader" events were much more li
 2. Crowded places with many people nearby
 3. Close-contact settings that facilitate close range conversations.
 
-{:refdef: style="text-align: center; padding-right:20px"}
+{:refdef: style="text-align: center;"}
 ![3Cs EN](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/3Cs EN.png){: height="500px" width="350px" style="text-align:center; padding-right:20px}![3Cs JP](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/3Cs JP.jpg){: height="500px" width="350px" style="text-align:center"}
 {: refdef}
 
@@ -211,7 +211,9 @@ While some businesses were also requested to close, it is interesting to note th
 While masks were quite scarce in February/early March, they are now pretty widely available.
 Social scientist Stefan Heeb has been [tracking mask usage on Tokyo's Yamanote Line](https://twitter.com/Svaphe/status/1256150775840960513). He found that mask wearing has been steadily increasing, now up to 96% (n=529).
 
+{:refdef: style="text-align: center;"}
 ![SH Train Masks](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/SH Train Masks.png){: style="text-align:center"}
+{: refdef}
 
 #### Does wearing a mask help?
 
@@ -239,12 +241,15 @@ A number of measures have been taken to prevent spread in brick-and-mortar locat
 
 Below is an image of mexican restaurant Guzman y Gomez in Shibuya, which was partly open inside but conducted most of its business as a take away outlet with this makeshift counter:
 
+{:refdef: style="text-align: center;"}
 ![GyG](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/GyG.jpg){: width="500px" style="text-align:center"}
+{: refdef}
 
 This pamphlet was also delivered to my letterbox outlining the various preventative measures taken by a local pachinko parlour:
 
+{:refdef: style="text-align: center;"}
 ![Pachinko Pamphlet](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/Pachinko Pamphlet.jpg){: width="500px" style="text-align:center"}
-
+{: refdef}
 
 Measures here include:
 - Disinfecting the pachinko machines
@@ -263,16 +268,21 @@ In conjunction with the “counter-cluster” strategy, certain establishments l
 
 Tokyo has seen a reduction as much as 80% in commuting to the office during the periods of the state of emergency, but now sits around -28% relative to baseline (as of June 6th, 2020):
 
+{:refdef: style="text-align: center;"}
 ![Tokyo Mobility](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/Tokyo Mobility.png){: style="text-align:center"}
+{: refdef}
 
 The same data for Greater London shows a more sustained drop, currently around -60% (as of June 6th, 2020):
 
+{:refdef: style="text-align: center;"}
 ![Greater London Mobility](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/Greater London Mobility.png){: style="text-align:center"}
+{: refdef}
 
 New York County shows a drop to -67% relative to baseline:
 
+{:refdef: style="text-align: center;"}
 ![New York County Mobility](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/New York County Mobility.png){: style="text-align:center"}
-
+{: refdef}
 
 ### Continued use of places that didn’t meet the 3Cs.
 
