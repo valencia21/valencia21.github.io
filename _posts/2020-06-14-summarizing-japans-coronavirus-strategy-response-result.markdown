@@ -12,7 +12,7 @@ categories:
 
 As of June 13th 2020, Japan appears to have successfully controlled the spread of the novel coronavirus. Noone is sure exactly why.
 
-This blog post is a rough summary of the factors at play, digging a little deeper into the evidence and providing additional reading material where appropriate.
+This blog post is a rough and abbreviated summary of the factors at play, occasionally digging a little deeper into the evidence and providing additional reading material.
 
 ## Why is Japan considered successful?
 
@@ -30,7 +30,7 @@ While Japan’s result compares very favourably with that of some western countr
 
 Every now and then I see a comment that a number of COVID-19 deaths are misclassified as pneumonia so the death figure is actually much higher.
 
-To factor in misclassifications you would consider total excess deaths by any cause relative to a baseline constructed from previous years. [This report](https://www.bloomberg.com/news/articles/2020-06-11/tokyo-mortality-increased-in-april-at-height-of-virus-pandemic) from Bloomberg suggests around 1,000 excess deaths over April compared to the baseline. Corey Wallace, assistant professor at Kanagawa University, suggests that the 104 COVID-19 deaths officially recorded could well be accurate and it is very unlikely for the real total to be above 500.
+To factor in misclassifications you would consider total excess deaths by any cause relative to a baseline constructed from previous years. [This report](https://www.bloomberg.com/news/articles/2020-06-11/tokyo-mortality-increased-in-april-at-height-of-virus-pandemic) from Bloomberg suggests around 1,000 excess deaths over April compared to the baseline. Corey Wallace, assistant professor at Kanagawa University, suggests that the 104 COVID-19 deaths officially recorded could well be accurate and it is very [unlikely for the real total to be above 500](https://twitter.com/CoreyJWallace/status/1270960407771885568).
 
 ## What was Japan’s strategy?
 
@@ -78,7 +78,7 @@ High-risk locations were identified after finding that the first clusters in Jap
 
 It is common sense to expect places that meet the 3Cs to be particularly high risk. It is less intuitive for a location to meet conditions 1 & 2, but the absence of face-to-face contact and active conversation in condition 3 to have such a suppressing effect on transmission. Here is a good explanation of why this actually may be quite intuitive, under the heading: “[Risks Follow Power Laws](https://www.lesswrong.com/posts/P7crAscAzftdE7ffv/covid-19-my-current-model#Risks_Follow_Power_Laws)”.
 
-The fact that all 3 conditions must be met was picked up in Japan early, noting that packed trains do not typically facilitate clusters since people are generally wearing masks and not talking to each other. As a resident of Japan for 8 years, I can verify that talking on your phone or even friends in a loudish voice on a train is somewhat taboo.
+The fact that all 3 conditions must be met was picked up in Japan early, noting that packed trains do not typically facilitate clusters since people are generally wearing masks and not talking to each other. As a resident of Japan for 8 years, I can verify that talking on your phone or even friends in a loudish voice on a train is somewhat taboo. Outside Japan, there was also [evidence from France](https://www.bloomberg.com/news/articles/2020-06-09/japan-and-france-find-public-transit-seems-safe) that no clusters formed in public transport.
 
 Further evidence that breathing/talking can facilitate spread [here](https://www.nejm.org/doi/full/10.1056/NEJMc2009324).
 
@@ -106,7 +106,7 @@ Many outside observers initially raised concerns that Japan wasn’t testing eno
 
 Government officials argued that the PCR tests available at the time were unreliable and false positives in testing would only serve to stretch already limited resources and over-burden medical institutions. False positives are particularly troublesome when your strategy is to spend copious resources actively identifying and managing clusters.
 
-A relative lack of deaths in Japan suggests that concerns in March that many cases may have been hidden were either misplaced or a very high % of cases are asymptomatic.
+A relative lack of deaths in Japan suggests that concerns in March that many cases may have been hidden were either misplaced or a higher than expected % of cases are asymptomatic.
 
 #### Are PCR tests unreliable?
 
