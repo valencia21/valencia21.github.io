@@ -216,7 +216,7 @@ In addition, if the government makes official recommendations to engage or disen
 
 While some businesses were also requested to close, it is interesting to note that they have no legal requirement to do so. If a request is ignored, the subsequent recourse is to issue a stronger *instruction* (Japanese: 指示, *shiji*) or even publicly announce the offending establishment in an effort to tarnish its reputation (note [this story](https://www.news24.jp/articles/2020/05/12/07641371.html) naming 20 pachinko parlours in Kanagawa prefecture). [This article](https://www.nli-research.co.jp/report/detail/id=64284?site=nli) speculates on whether or not there is a legal precedent to levying fines or stronger legal measures against nonconforming businesses.
 
-## What did the Japanese population do in practice?
+## How did the Japanese population react in practice?
 
 ### Mask Wearing
 
