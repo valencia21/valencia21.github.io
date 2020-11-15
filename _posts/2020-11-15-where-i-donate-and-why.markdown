@@ -182,18 +182,18 @@ Over time, the following two points have led me to decrease the amount I donate 
 ## Footnotes
 [^1]: Donating money is just one way of having an impact. Unless earning vast amounts of money is your comparative advantage by a large margin, it may well be that you can have a far larger impact by working on a specific cause area.
 [^2]: Condensed from a [paper](https://drive.google.com/file/d/1rQu75k8uMFpdsp1y3JWlHP6kev3T-97N/view) by Will MacAskill on “The Definition of Effective Altruism”.
-[^3]: https://80000hours.org/key-ideas/#two-minute-summary
+[^3]: [https://80000hours.org/key-ideas/#two-minute-summary](https://80000hours.org/key-ideas/#two-minute-summary)
 [^4]: In moral philosophy, there is a notable distinction between *intrinsic* and *instrumental* value. For some intuition of this distinction, consider the following - Think of a sublime natural landscape. Imagine now that this landscape exists, but no conscious being is able to experience it. Does the natural landscape have value without being experienced?  Maybe you believe it does, in which case something about the landscape has intrinsic value - even without being experienced. Maybe you believe it does not, the value provided by nature is instrumental; a person is able to experience its beauty, feel an emotion, and ultimately a positive subjective experience - or increased wellbeing - which in itself has intrinsic value.
 [^5]: Most people are likely to have a set of intrinsic values, rather than just one. [This article/talk](https://www.effectivealtruism.org/articles/ea-global-2018-intrinsic-values/) by Spencer Greenberg does a great job of explaining how one might discover their own set of intrinsic values.
 [^6]:For further reading on dealing with moral uncertainty, see [here](https://global.oup.com/academic/product/moral-uncertainty-9780198722274?cc=jp&lang=en&#) (available for free from the “Open Access” button).
-[^7]: https://80000hours.org/problem-profiles/climate-change/
+[^7]: [https://80000hours.org/problem-profiles/climate-change/](https://80000hours.org/problem-profiles/climate-change/)
 [^8]: Proponents of anti-aging research include [Aubrey de Grey](https://www.bbc.com/news/av/technology-43402894) and Ethereum creator [Vitalik Buterin](https://twitter.com/VitalikButerin/status/1244658432973643778).
 [^9]: There is [some pushback](https://forum.effectivealtruism.org/posts/bsE5t6qhGC65fEpzN/growth-and-the-case-against-randomista-development) in the EA community regarding the focus on interventions that can be tested by RCTs (randomista development) over actions that promote economic growth as a whole.
-[^10]: https://www.givewell.org/sources/blog-post/q1-q2-2020-discretionary-funding-allocation#2
+[^10]: [https://www.givewell.org/sources/blog-post/q1-q2-2020-discretionary-funding-allocation#2](https://www.givewell.org/sources/blog-post/q1-q2-2020-discretionary-funding-allocation#2)
 [^11]: While I have suggested in the sub-header of this section that this is a “smaller-scale outcome”, remember this is still saving a human life!
-[^12]: https://80000hours.org/articles/future-generations/
+[^12]: [https://80000hours.org/articles/future-generations/](https://80000hours.org/articles/future-generations/)
 [^13]: Further reading from the [Global Priorities Project](https://www.fhi.ox.ac.uk/wp-content/uploads/Existential-Risks-2017-01-23.pdf) or [The Precipice](https://www.amazon.co.jp/-/en/Toby-Ord/dp/0316484911) by Toby Ord.
 [^14]: In addition to known risks, there are unknown risks that will emerge over time that also need to be identified and solved.
-[^15]: https://forum.effectivealtruism.org/posts/XXLf6FmWujkxna3E6/are-we-living-at-the-most-influential-time-in-history-1
-[^16]: https://founderspledge.com/stories/investing-to-give
+[^15]: [https://forum.effectivealtruism.org/posts/XXLf6FmWujkxna3E6/are-we-living-at-the-most-influential-time-in-history-1](https://forum.effectivealtruism.org/posts/XXLf6FmWujkxna3E6/are-we-living-at-the-most-influential-time-in-history-1)
+[^16]: [https://founderspledge.com/stories/investing-to-give](https://founderspledge.com/stories/investing-to-give)
 [^17]: My skill set is rare for an EA and there is potential to use this for more impact than donations alone - I’m based in Tokyo, speak/read/write Japanese to a high level, and have some (admittedly limited) research/data science experience. This has led to research work with [Mercy For Animals](https://animalcharityevaluators.org/charity-review/mercy-for-animals/) (previously recommended by [Animal Charity Evaluators](https://animalcharityevaluators.org/)), and other work not yet public - work that I may not have been able to take, or would have been less willing to take, if I didn’t have financial security.
