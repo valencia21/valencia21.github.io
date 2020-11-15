@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Novel Coronavirus - Summarizing Japan's Strategy, Response and Result"
-date:   2020-06-14 17:00:00 +0900
+title:  "Where I donate and why (English)"
+date:   2020-11-15 17:00:00 +0900
 categories:
 ---
 
@@ -9,301 +9,194 @@ categories:
 * Do not remove this line (it will not be displayed)
 {:toc}
 
+Running Effective Altruism Japan, I often find myself explaining the following progression in Japanese:
 
-As of June 13th 2020, Japan appears to have successfully controlled the spread of the novel coronavirus. Noone is sure exactly why.
+1. I want to make the world a better place as much as I possibly can.
+2. I should donate to *x*, that is working on problem *y*.
 
-This blog post is a rough and abbreviated summary of the factors at play, occasionally digging a little deeper into the evidence and providing additional reading material.
+This blog post is intended to externalize my thought process when it comes to donating **money**[^1] - providing a Japanese version for budding Japanese Effective Altruists (EAs) that do not speak or read English.
 
-## Why is Japan considered successful?
+While aligned with the principles of Effective Altruism, I ask readers to avoid conflating my thought process with EA as a whole.
 
-According to data provided by the Financial Times (as of June 8th 2020), a total of 916 people have died with the cause attributed to COVID-19.
+For a more nuanced guide to Effective Altruism, I recommend the following resources:
 
-![Japan Deaths](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/Japan Deaths.png){: style="text-align:center"}
+- [Misconceptions about Effective Altruism](https://80000hours.org/2020/08/misconceptions-effective-altruism/)
+- [An Introduction to Effective Altruism](https://www.effectivealtruism.org/articles/introduction-to-effective-altruism/)
+- [A guide to using your career to help solve the world’s most pressing problems](https://80000hours.org/key-ideas/) (longer)
 
-This equates to 7.2 deaths per million.
+## What is Effective Altruism?
 
-![Japan Deaths per Million](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/Japan Deaths per Million.png){: style="text-align:center"}
+The world has many problems, many different ways of solving these problems, and only limited resources.
 
-While Japan’s result compares very favourably with that of some western countries, it is quite typical of Asian countries. Japan has performed far worse than countries such as Taiwan (now 7 recorded deaths) and Vietnam (still 0 recorded deaths).
+The Effective Altruism movement seeks to figure out, of all the possible uses of these resources, which uses produce the most good, impartially considered[^2].
 
-### Any concerns about the accuracy of the data?
+## What does it mean to “produce the most good”?
 
-Every now and then I see a comment that a number of COVID-19 deaths are misclassified as pneumonia so the death figure is actually much higher.
+80,000 Hours suggests the following on this topic[^3]:
 
-To factor in misclassifications you would consider total excess deaths by any cause relative to a baseline constructed from previous years. [This report](https://www.bloomberg.com/news/articles/2020-06-11/tokyo-mortality-increased-in-april-at-height-of-virus-pandemic) from Bloomberg suggests around 1,000 excess deaths over April compared to the baseline. Corey Wallace, assistant professor at Kanagawa University, suggests that the 104 COVID-19 deaths officially recorded could well be accurate and it is very [unlikely for the real total to be above 500](https://twitter.com/CoreyJWallace/status/1270960407771885568).
+<center>*“...‘having a positive impact’ is about promoting welfare over the long term. However, we’re highly uncertain about this definition, so in practice we aim to consider other perspectives.”*</center>
 
-## What was Japan’s strategy?
+### Considering moral frameworks
 
-Japan implemented a strategy that roughly translates to “Counter-cluster Measures”.
+The focus on welfare as the only intrinsic value[^4] could be considered broadly **utilitarian**; an action can be determined as either good or bad by its ultimate effect on the welfare of people and other sentient beings.
 
-I tweeted my translation of the official strategy doc [here](https://twitter.com/LuisCostigan1/status/1242339602725126144).
+When thinking about how to make the world a better place at higher levels of abstraction, I believe this is a useful starting point - but a complete focus on wellbeing is likely also non-optimal[^5].
 
-The Japanese government created a task force that tried to grasp the origin of clusters and prevent spread by:
+Other theories of moral philosophy provide alternatives. In practice, people incorporate elements from many different frameworks into their everyday decisions and actions.
 
-1. Detecting outbreaks of patient clusters
-- Identifying group outbreaks at an early stage through notifications from hospitals/clinics.
+These include:
 
-2. Searching for the infection origin/route
-- Conducting a focused investigation starting with the infected person to understand how the infection may have spread.
+- [Deontology](https://plato.stanford.edu/entries/ethics-deontological/), which offers a complex set of rules to determine whether an action is good or bad.
+- [Virtue ethics](https://plato.stanford.edu/entries/ethics-virtue/), which encourages a focus on building your character to be a “good” person.
+- [Contractarianism](https://plato.stanford.edu/entries/contractarianism/), a view in which morality emerges naturally in a society as people cooperate for a better overall outcome for all participating agents.
 
-3. Implementing measures to prevent spread
-- Health monitoring of those who came into close contact with the patient and requesting that they self-isolate voluntarily. Companies and other establishments related to the patient will also be requested to close and cancel activities such as events.
+**With an emphasis on improving welfare in EA, it’s important to acknowledge a degree of uncertainty when we imply that it is a large part of what matters morally**[^6].
 
-### Why focus on clusters?
+## What cause should I focus on?
 
-Analysis of the first few cases in Japan indicated that while most people infected would not pass on the infection to others, a few would go on to infect many others in a so-called “superspreader” event.
+### Introducing the INT framework
 
-![Flu vs COVID-19 Spread](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/Flu vs COVID-19 Spread.png){: style="text-align:center"}
+It can be easy to equate social impact with a specific cause area (maybe due to its popularity or influence by those in your social circle) without properly considering alternatives. I think this is a mistake; if you want to have the biggest impact possible, it is worth spending time to examine multiple promising cause areas.
 
-#### Is there any further evidence that COVID-19 spreads in this way?
+In the EA community, the INT (Importance, Neglectedness, Tractability) framework is often used to narrow down and prioritize cause areas:
 
-In addition to the now well-known *R* (reproduction number) measure, scientists also use a value called the dispersion factor *k*. A lower *k* value indicates a smaller number of people contributing to total transmission.
-There is some evidence that *k* is low for COVID-19 summarized [here](https://www.sciencemag.org/news/2020/05/why-do-some-covid-19-patients-infect-many-others-whereas-most-don-t-spread-virus-all).
+**Importance:** How many people (and sentient beings) are affected by an issue and by how much?
 
-Experts in Japan theorized further that "superspreader" events were much more likely to occur in places that met the 3 conditions below:
+*Example: Climate change, in particular the non-negligible risk of extreme climate change, has the potential to affect many people, in a big way - thus it scores highly on the importance criteria.*
 
-1. Closed spaces with poor ventilation
-2. Crowded places with many people nearby
-3. Close-contact settings that facilitate close range conversations.
+**Neglectedness:** What degree of resources are already focused on resolving an issue?
 
+*Example: Climate change receives a lot of attention and a lot of resources; 80,000 Hours suggests that an effective $10-100 billion per year is spent trying to prevent climate change[^7].*
 
-{:refdef: style="text-align: center;"}
-![3Cs EN](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/3Cs EN.png){: height="500px" width="350px" style="text-align:center; padding-right:20px}![3Cs JP](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/3Cs JP.jpg){: height="500px" width="350px" style="text-align:center"}
-{: refdef}
+There are other cause areas that may be just as important as climate change, but receive far less attention and resources - you should consider whether you may have a larger impact on the margin by focusing your resources on these.
 
+**Tractability:** How easy is it to make progress resolving an issue?
 
-High-risk locations were identified after finding that the first clusters in Japan were formed in places such as fitness gyms, restaurants and hospitals.
+*Example: Aging affects everyone, in a big way, and is comparatively neglected as a cause area; but stopping or preventing the aging process is traditionally thought of as being extremely difficult[^8].*
 
-#### Is there any further evidence that certain locations facilitate spread more than others?
+### Expected value
 
-It is common sense to expect places that meet the 3Cs to be particularly high risk. It is less intuitive for a location to meet conditions 1 & 2, but the absence of face-to-face contact and active conversation in condition 3 to have such a suppressing effect on transmission. Here is a good explanation of why this actually may be quite intuitive, under the heading: “[Risks Follow Power Laws](https://www.lesswrong.com/posts/P7crAscAzftdE7ffv/covid-19-my-current-model#Risks_Follow_Power_Laws)”.
+Considering the “expected value” of an action or donation is a way of understanding its effectiveness.
 
-The fact that all 3 conditions must be met was picked up in Japan early, noting that packed trains do not typically facilitate clusters since people are generally wearing masks and not talking to each other. As a resident of Japan for 8 years, I can verify that talking on your phone or even friends in a loudish voice on a train is somewhat taboo. Outside Japan, there was also [evidence from France](https://www.bloomberg.com/news/articles/2020-06-09/japan-and-france-find-public-transit-seems-safe) that no clusters formed in public transport.
+*Expected value = Outcome x Probability of Outcome*
 
-Further evidence that breathing/talking can facilitate spread [here](https://www.nejm.org/doi/full/10.1056/NEJMc2009324).
+Let us consider two cause areas for which the intuition behind an “expected value” calculation may be entirely different.
 
-### Travel bans
+#### 1. Global health (smaller-scale outcome, higher probability)
 
-Like many countries, Japan implemented a widespread [travel ban](https://www.japan.travel/en/coronavirus/) to deny entry for anyone that has stayed in a long list of countries up to 14 days before landing.
+There are a number of well-understood interventions in global health, including the distribution of anti-malaria bed nets, deworming, and giving cash to people directly. Many of these interventions have a large evidence base, often through Randomized Controlled Trials (RCTs)[^9].
 
-In addition, anyone who is able to land must take a PCR test upon entry and be quarantined in a location specified by the quarantine station chief for 14 days. They are also requested to refrain from using public transport.
+GiveWell is a meta-charity that evaluates the effectiveness of charities in global health. They make charity recommendations based on four criteria:
 
-#### Are travel bans effective at controlling spread?
+- Evidence of effectiveness (using aforementioned RCTs)
+- Cost-effectiveness (using their own model)
+- Room for more funding
+- Transparency
 
-Dr. Cassidy Nelson, who studies catastrophic biological risks at the Future of Humanity Institute, suggests the following on travel bans (summarised nicely [here](https://unherd.com/thepost/travels-bans-dont-work/)):
+Using GiveWell’s recommendations, you can expect to a reasonable degree of certainty that your donation will have its intended effect - current estimates suggest that $5,000 given to the Against Malaria Foundation would save a life[^10][^11].
 
-1. Models analysing the effectiveness on travel bans during prior outbreaks (particularly 2009 swine flu) suggest that while bans cause a delay in the peak of cases, the magnitude of cases does not change.
+You can take a look at GiveWell’s recommended charities [here](https://www.givewell.org/charities/top-charities).
 
-2. They often create perverse incentives for people and countries. People might travel through certain locations to get from A to B, or you might accidentally prevent shipments of important items such as PPE equipment from getting to where it is needed.
+##### Choosing a place to donate: Normal distribution vs. Fat-tail distribution (additional note)
 
-3. If a country already has a number of cases (such as Japan at 17,000+ cases as of June 8th 2020), there is already a high degree of person-to-person transmission. Opening up travel would only account for a small % of cases even if no preventative measures are taken.
+When considering a place to donate in global health (where more information is available than a typical cause area), it is worth considering the difference in effectiveness between the most effective charities and the median.
 
-Closing Japan off temporarily was a good move when dealing with such high degrees of uncertainty at the beginning of the pandemic. Going forward, I'm not convinced it would achieve much of a positive outcome.
+- Normal distribution; the tallest people are only about 50% taller than the average.
+- Fat-tail distribution; the highest-earning people earn thousands of times more than average.
 
-### A lack of testing?
+80,000 Hours [surveyed people](https://80000hours.org/2017/05/most-people-report-believing-its-incredibly-cheap-to-save-lives-in-the-developing-world/) on how much they think the most effective charities are relative to the median and found the typical response to be that the best charities are about 66% more effective (a normal distribution). Instead, the difference is more like 10x-100x (a fat-tail distribution); choosing a top charity over the median charity can have a huge effect on expected impact.
 
-Many outside observers initially raised concerns that Japan wasn’t testing enough and a number of actual cases may not be accurately portrayed in official numbers.
+##### Reducing existential risk (larger-scale outcome, lower probability)
 
-Government officials argued that the PCR tests available at the time were unreliable and false positives in testing would only serve to stretch already limited resources and over-burden medical institutions. False positives are particularly troublesome when your strategy is to spend copious resources actively identifying and managing clusters.
+The future holds a lot of potential. The Earth could remain habitable for 600-800 million years, so there could be about 21 million future generations, and they could lead great lives, whatever you think “great” consists of[^12].
 
-A relative lack of deaths in Japan suggests that concerns in March that many cases may have been hidden were either misplaced or a higher than expected % of cases are asymptomatic.
+Existential risk refers to the likelihood of threats to this potential by either eliminating humanity entirely such that future generations cannot exist, or causing such great damage to humanity that it cannot flourish as it otherwise would. Risks of this nature include, but are by no means limited to, nuclear war, an engineered pandemic (that either kills or prevents the ability of its victims to reproduce), the extreme risks of climate change, or even the emergence of misaligned AI[^13][^14].
 
-#### Are PCR tests unreliable?
+**Efforts to reduce the risk of such threats constitute an outcome so vast that your contribution can be much larger in expectation, even if the probability of having such an impact is miniscule.**
 
-No test is 100% perfect. Current literature suggests that PCR tests have low-moderate sensitivity (around 70%) but high specificity (around 95%).
-A test with low sensitivity will fail to detect actual cases, while low specificity will produce positives where there is no infection.
+There are objections to focusing on the long term addressed in [this paper](https://globalprioritiesinstitute.org/wp-content/uploads/2019/Greaves_MacAskill_The_Case_for_Strong_Longtermism.pdf), including, but not limited to:
 
-Back in March I tweeted a [summary translation](https://twitter.com/LuisCostigan1/status/1242850707461402624) of a report of cases from the Diamond Princess, which included some information on low PCR test sensitivity. More evidence for low sensitivity can be found [here](https://pubs.rsna.org/doi/10.1148/radiol.2020200642) and [here](https://www.bmj.com/content/bmj/369/bmj.m1808.full.pdf).
+- Working on outcomes that occur in the far future is intractable.
+- People in the far future are likely to be far better off, so we should focus on improving welfare in the nearer term.
 
-As for specificity, 95% is considered high. However, a comprehensive testing program of 100,000 tests per day would still detect 5,000 cases where there are none. Setting to one side the burden of dealing with these cases in various medical institutions, you would also add so much noise to the signal required to conduct the aforementioned “counter-cluster” strategy that it may be rendered ineffective.
+If you want to direct your donations towards reducing existential risk, the [Long-Term Future Fund](https://app.effectivealtruism.org/funds/far-future) may be a good place to start.
 
-### Data availability and accuracy
+### Other cause areas
 
-Testing in Japan was conducted by a mix of public hospitals/medical facilities and private facilities. Data provided by the Ministry of Health, Labour and Welfare (MHLW) only took into account figures reported by public facilities.
+While the above two cause areas are popular within the Effective Altruism community, there are plenty more to consider. 80,000 Hours provides a body of research called “[Problem Profiles](https://80000hours.org/problem-profiles/)” that I would strongly recommend reading.
 
-In Tokyo, that changed in early May when [data for all institutions was released dating back to January](https://www.japantimes.co.jp/news/2020/05/09/national/tokyo-releases-covid-19-data/#.XuS9e8ZS-Aw). I’m unsure how the integration of this data affected overall figures.
+## The case for investing to give
 
-Other than data provided by the MHLW, a dashboard containing case data from regular media reports can be found [here](https://covid19japan.com/) (see dashboard details for data source info).
+*A priori*, it is unlikely that now, of all times, is the best moment to give. The size of the opportunity to make a difference at a given moment is sometimes referred to as its *hinginess*[^15].
 
-As with much COVID-19 data globally, Japan's data is fragmented and difficult to interpret.
+In a paper “[Patience and Philanthropy](https://philiptrammell.com/static/PatienceAndPhilanthropy.pdf)” (currently a work in progress) Philip Trammell discusses the pros and cons of waiting:
 
-## Declaring a State of Emergency
+Pros:
+- Instead of donating $1,000 today, you could invest in the stock market - at a return of 5% per year, the amount of that donation would be $125,000 after 100 years, and $17 million after 200 years.
+- Much more information will be available about how best to use a donation.
 
-(This content taken from a [tweet](https://twitter.com/dwvcd/status/1243539248051093509) by Derek Wessman.)
+Cons:
+- There is a chance the fund is destroyed through war, revolution or financial collapse.
+- The eventual use of the donation could drift from the original intended use.
+- The original intention of the donation could later be shown to be deeply morally mistaken.
 
-While some countries were able to order curfews and ban events in a legally enforceable way, Japan’s constitution does not allow this:
+EA-affiliated organization Founder’s Pledge has been conducting their own research into the promise of investing to give, with tentative plans to launch a Long-term Investment Fund in 2021[^16].
 
-*“Freedom of assembly and association as well as speech, press and all other forms of expression are guaranteed."*
+## So, where do I give?
 
-However, Japan does have a “Novel Influenza Etc Special Measures Law” that enhances government power during a pandemic. Through this law, the government can request (Japanese: 要請, *yōsei*) the public and businesses to take certain measures.
+In general, my donations have gradually moved from funding global health interventions (smaller-scale outcomes, higher probability of success) towards work that addresses global catastrophic risks (much larger-scale outcomes, much lower probability of success).
 
-The Japanese word here is a strong word coming from the government, and under the Special Measures Law, failure to comply with some requests can result in government action.
+### 2016-2018
 
-### What is a State of Emergency?
+Back in 2016, I started by giving to charities recommended by GiveWell - [GiveDirectly](https://www.givewell.org/charities/give-directly) and [Helen Keller International](https://www.givewell.org/charities/helen-keller-international).
 
-I found it difficult to find exact information in Japanese or English on the precise definition of the state of emergency. As far as I can tell, it enables local governments to make requests as per the “Novel Influenza Etc Special Measures Law”.
+I chose GiveDirectly because the value proposition was clear - money is transferred directly to those who need it, and the evidence base for doing so suggests this money is used productively.
 
-The following information is a rough summary of a PDF entitled “[What is a state of emergency?](http://www.pref.hokkaido.lg.jp/hf/kth/kak/kinkixyuuzitai0417new.pdf)” (Japanese only) from the Hokkaido prefecture website. The messaging used here may be useful information for other cities and countries attempting to find a balance between curtailing spread and reopening their economy.
+I chose to donate to Helen Keller International after coming across the [model](https://www.givewell.org/how-we-work/our-criteria/cost-effectiveness/cost-effectiveness-models) GiveWell uses to estimate cost-effectiveness. After adding my own moral weights to the model, it output the lowest cost per “outcome equivalent to a life saved” for Helen Keller.
 
-(Note that these guidelines are specifically for Hokkaido, other prefectures may have slight differences.)
+### 2018-2019
 
-Page 1:
-The state of emergency is a set of guidelines for all people, businesses and local governments to follow to prevent the spread of the novel coronavirus.
+Around this time I found some [particularly insightful essays](https://reducing-suffering.org/) on the potential scale of wild animal suffering by Brian Tomasik, who also established the [Center on Long-Term Risk](https://longtermrisk.org/), which has the unusual research focus of preventing s-risks (suffering risks) among future generations. This was one of a few projects funded by the Effective Altruism Foundation, where I directed one larger donation.
 
-Page 3:
-Be extra diligent in taking preventative measures such as washing your hands and wearing masks.
+### Late-2019 onwards
 
-Page 4:
-Stay home as much as possible, except for activities essential to your lifestyle. Essential activities include:
-- Health-related activities such as going to a clinic/hospital, outdoors exercise.
-- Buying essential items.
-- Going to your workplace etc.
+I have made several donations to EA Funds; typically at a rate of 75% to the [Long-Term Future Fund](https://app.effectivealtruism.org/funds/far-future) and 25% to the [Effective Altruism Infrastructure Fund](https://app.effectivealtruism.org/funds/ea-community).
 
-Page 5:
-For those continuing to work, the following are encouraged:
-- Staggering working hours to avoid congestion on public transport.
-- Avoiding locations that meet the 3Cs.
-- Working from home.
+I have also made smaller donations to [The Humane League](https://animalcharityevaluators.org/charity-review/the-humane-league/), which focuses on farm animal welfare, and the [Malaria Consortium](https://www.givewell.org/charities/malaria-consortium).
 
-Page 6:
-Avoid establishments in business districts used for settai (corporate entertainment)
-- Avoid bars, nightclubs and restaurants.
-- Avoid karaoke and live venues.
+### Future donations
 
-Page 7:
-Avoid unnecessary traveling, particularly across prefecture borders.
-This includes traveling during Golden Week.
+I find the “investing to give” argument quite convincing, so I’m keeping track of the Founder’s Pledge investment vehicle in development. While by no means concrete, I expect short-term future donations to be a mix of investing to give and the aforementioned EA funds.
 
-Page 8:
-Closing high-risk facilities.
-Establishments serving alcohol are requested to stop serving from 7pm.
+## How much do I give?
 
-Page 9:
-Refrain from hosting events or parties in places that meet the 3Cs.
+While I have not taken it myself, the [Giving What We Can](https://www.givingwhatwecan.org/pledge/) pledge has been taken by 5,000+ people who give away 10%+ of their income.
 
-Page 10:
-Keep a safe distance from people. A rough guide is to maintain a distance such that your hands wouldn’t touch if both people stretched them out to their side.
+I donated ~10% of my after tax income from 2016-2018, which I have since dropped to around ~7% (as of 2020). Since 2018, I have placed more emphasis on saving, at ~33% of my after tax income.
 
-### When does a state of emergency end?
+Over time, the following two points have led me to decrease the amount I donate and increase the amount I save:
 
-The criteria to end a state of emergency is not set in stone, but there are some guidelines to help make a decision. The following items are taken into consideration:
+- Where I think may be the best place to donate has changed quite significantly in a short space of time; I now acknowledge a deep uncertainty.
+- I could potentially have a bigger impact by saving as much as possible to give myself more freedom to study and work on impactful projects. If I have such freedom + excess funds, the option to donate still exists.
 
-1) Infection situation
-- A declining number of cases.
-- Due diligence with respect to new clusters, the number of infections in medical institutions and infections with unknown origins.
-- The infection situation of neighbouring areas (i.e. adjacent prefectures)
-
-2) Medical service system
-- A consistent decrease in patients with severe symptoms.
-- Hospital bed capacity.
-- Whether or not a system to respond to a sudden increase in patients has been prepared.
-
-3) Surveillance system
-- Whether or not a system to administer PCR tests without delay has been prepared.
-
-The complete official guidelines in English for lifting the state of emergency can be found [here](https://www.mhlw.go.jp/content/10900000/000635890.pdf).
-
-The Japanese government is expecting to cycle through periods of a state of emergency as required in an effort to flatten the curve and expand medical capacity/counter-cluster strategy resources.
-
-
-![SoE End](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/SoE End.png){: style="text-align:center"}
-
-### What stops individuals/businesses from acting as normal in the absence of a legal threat?
-
-As noted by many other commentators, there are strong norms around not being a bother to others in Japanese culture.
-
-In addition, if the government makes official recommendations to engage or disengage in certain behaviours, the population tends to take such recommendations seriously.
-
-While some businesses were also requested to close, it is interesting to note that they have no legal requirement to do so. If a request is ignored, the subsequent recourse is to issue a stronger *instruction* (Japanese: 指示, *shiji*) or even publicly announce the offending establishment in an effort to tarnish its reputation (note [this story](https://www.news24.jp/articles/2020/05/12/07641371.html) naming 20 pachinko parlours in Kanagawa prefecture). [This article](https://www.nli-research.co.jp/report/detail/id=64284?site=nli) speculates on whether or not there is a legal precedent to levying fines or stronger legal measures against nonconforming businesses.
-
-## How did the Japanese population react in practice?
-
-### Mask Wearing
-
-While masks were quite scarce in February/early March, they are now widely available.
-Social scientist Stefan Heeb has been [tracking mask usage on Tokyo's Yamanote Line](https://twitter.com/Svaphe/status/1256150775840960513). He found that mask wearing has been steadily increasing, now up to 96% (n=529).
-
-{:refdef: style="text-align: center;"}
-![SH Train Masks](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/SH Train Masks.png){: style="text-align:center"}
-{: refdef}
-
-#### Does wearing a mask help?
-
-Despite conflicting advice from WHO at the start of the outbreak, evidence has pointed somewhat towards masks having a large effect on preventing infection. A <a href="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(20)31142-9/fulltext">meta-analysis of ten studies with results related to mask wearing</a> published in Lancet (June 1st, 2020) states:
-
-*“Medical or surgical face masks might result in a large reduction in virus infection; N95 respirators might be associated with a larger reduction in risk compared with surgical or similar masks.”*
-
-It is worth pointing out that this finding was stated with a low degree of certainty, the effect of mask wearing could be quite different.
-
-### Using Hand Sanitizer
-
-Living in Tokyo, I’ve found hand sanitizer to be widely available and people seem quite diligent in using it regularly (it was freely available at the entrance to the office of the Japanese company I worked at).
-
-The only free data I could find on hand sanitizer usage by country was on Statista, where they offer a figure for average revenue for the hand sanitizer market per capita. 2019 spend on hand sanitizer was estimated at $0.73 and $0.72 per capita for the US and Japan respectively. This suggests little difference in hand hygiene between the two (although I’m not sure this is the case).
-
-(Any data I could get on Japan’s use of hand sanitizer relative to other places would be welcomed!)
-
-### Extra Measures Taken at Shops/Restaurants etc.
-
-A number of measures have been taken to prevent spread in brick-and-mortar locations:
-
-- A vinyl sheet between the customer and cashier.
-- Hand sanitizer available at the entrance/in bathrooms + signs to encourage use.
-- Staff wearing masks at all times, signs to encourage customers to do the same.
-
-Below is an image of mexican restaurant Guzman y Gomez in Shibuya, which was partly open inside but conducted most of its business as a take away outlet with this makeshift counter:
-
-{:refdef: style="text-align: center;"}
-![GyG](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/GyG.jpg){: width="500px" style="text-align:center"}
-{: refdef}
-
-This pamphlet was also delivered to my letterbox outlining the various preventative measures taken by a local pachinko parlour:
-
-{:refdef: style="text-align: center;"}
-![Pachinko Pamphlet](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/Pachinko Pamphlet.jpg){: width="500px" style="text-align:center"}
-{: refdef}
-
-Measures here include:
-- Disinfecting the pachinko machines
-- Separating panels
-- Vinyl curtain between customer and cashier
-- Disinfecting the entrance door
-- Disposable gloves
-- Music turned down for easier conversation
-- Temperature checks
-- Masks for staff members
-- Stronger ventilation
-
-In conjunction with the “counter-cluster” strategy, certain establishments like bars and karaoke parlours also follow a protocol to check the body temperature and take down contact information of all entering customers so the route of infection is easier to trace in case of an infection.
-
-### Going to the Office
-
-Tokyo has seen a reduction as much as 80% in commuting to the office during the periods of the state of emergency, but now sits around -28% relative to baseline (as of June 6th, 2020):
-
-{:refdef: style="text-align: center;"}
-![Tokyo Mobility](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/Tokyo Mobility.png){: style="text-align:center"}
-{: refdef}
-
-The same data for Greater London shows a more sustained drop, currently around -60% (as of June 6th, 2020):
-
-{:refdef: style="text-align: center;"}
-![Greater London Mobility](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/Greater London Mobility.png){: style="text-align:center"}
-{: refdef}
-
-New York County shows a drop to -67% relative to baseline:
-
-{:refdef: style="text-align: center;"}
-![New York County Mobility](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/New York County Mobility.png){: style="text-align:center"}
-{: refdef}
-
-This suggests that public transport and offices are still being used frequently without too much of an effect on spread.
-
-### Continued use of places that didn’t meet the 3Cs.
-
-Messaging from the Japanese government on what places to avoid has been pretty clear, but my impression is that places that fit 1 or 2 of the 3Cs have only seen a slight reduction in use. This would include places such as:
-
-- Stadia
-- Parks (for cherry blossom viewing, day out with the family etc.)
-- Public transport
-
-If such places are being used continuously without causing a significant uptake in infections, a similar kind of messaging could be effective in other parts of the world.
+## Footnotes
+[^1]: Donating money is just one way of having an impact. Unless earning vast amounts of money is your comparative advantage by a large margin, it may well be that you can have a far larger impact by working on a specific cause area.
+[^2]: Condensed from a [paper](https://drive.google.com/file/d/1rQu75k8uMFpdsp1y3JWlHP6kev3T-97N/view) by Will MacAskill on “The Definition of Effective Altruism”.
+[^3]: https://80000hours.org/key-ideas/#two-minute-summary
+[^4]: In moral philosophy, there is a notable distinction between *intrinsic* and *instrumental* value. For some intuition of this distinction, consider the following:
+- Think of a sublime natural landscape. Imagine now that this landscape exists, but no conscious being is able to experience it. Does the natural landscape have value without being experienced?  
+- Maybe you believe it does, in which case something about the landscape has intrinsic value - even without being experienced.
+- Maybe you believe it does not, the value provided by nature is instrumental; a person is able to experience its beauty, feel an emotion, and ultimately a positive subjective experience - or increased wellbeing - which in itself has intrinsic value.
+[^5]: Most people are likely to have a set of intrinsic values, rather than just one. [This article/talk](https://www.effectivealtruism.org/articles/ea-global-2018-intrinsic-values/) by Spencer Greenberg does a great job of explaining how one might discover their own set of intrinsic values.
+[^6]:For further reading on dealing with moral uncertainty, see [here](https://global.oup.com/academic/product/moral-uncertainty-9780198722274?cc=jp&lang=en&#) (available for free from the “Open Access” button).
+[^7]: https://80000hours.org/problem-profiles/climate-change/
+[^8]: Proponents of anti-aging research include [Aubrey de Grey](https://www.bbc.com/news/av/technology-43402894) and Ethereum creator [Vitalik Buterin](https://twitter.com/VitalikButerin/status/1244658432973643778).
+[^9]: There is [some pushback](https://forum.effectivealtruism.org/posts/bsE5t6qhGC65fEpzN/growth-and-the-case-against-randomista-development) in the EA community regarding the focus on interventions that can be tested by RCTs (randomista development) over actions that promote economic growth as a whole.
+[^10]: https://www.givewell.org/sources/blog-post/q1-q2-2020-discretionary-funding-allocation#2
+[^11]: While I have suggested in the sub-header of this section that this is a “smaller-scale outcome”, remember this is still saving a human life!
+[^12]: https://80000hours.org/articles/future-generations/
+[^13]: Further reading from the [Global Priorities Project](https://www.fhi.ox.ac.uk/wp-content/uploads/Existential-Risks-2017-01-23.pdf) or [The Precipice](https://www.amazon.co.jp/-/en/Toby-Ord/dp/0316484911) by Toby Ord.
+[^14]: In addition to known risks, there are unknown risks that will emerge over time that also need to be identified and solved.
+[^15]: https://forum.effectivealtruism.org/posts/XXLf6FmWujkxna3E6/are-we-living-at-the-most-influential-time-in-history-1
+[^16]: https://founderspledge.com/stories/investing-to-give
+[^17]: My skill set is rare for an EA and there is potential to use this for more impact than donations alone - I’m based in Tokyo, speak/read/write Japanese to a high level, and have some (admittedly limited) research/data science experience. This has led to research work with [Mercy For Animals](https://animalcharityevaluators.org/charity-review/mercy-for-animals/) (previously recommended by [Animal Charity Evaluators](https://animalcharityevaluators.org/)), and other work not yet public - work that I may not have been able to take, or would have been less willing to take, if I didn’t have financial security.
