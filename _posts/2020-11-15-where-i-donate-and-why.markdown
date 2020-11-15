@@ -9,7 +9,7 @@ categories:
 * Do not remove this line (it will not be displayed)
 {:toc}
 
-Running Effective Altruism Japan, I often find myself explaining the following progression in Japanese:
+Building Effective Altruism Japan, I often find myself explaining the following progression in Japanese:
 
 1. I want to make the world a better place as much as I possibly can.
 2. I should donate to *x*, that is working on problem *y*.
@@ -97,7 +97,7 @@ Using GiveWell’s recommendations, you can expect to a reasonable degree of cer
 
 You can take a look at GiveWell’s recommended charities [here](https://www.givewell.org/charities/top-charities).
 
-##### Choosing a place to donate: Normal distribution vs. Fat-tail distribution (additional note)
+**Choosing a place to donate: Normal distribution vs. Fat-tail distribution (additional note)**
 
 When considering a place to donate in global health (where more information is available than a typical cause area), it is worth considering the difference in effectiveness between the most effective charities and the median.
 
