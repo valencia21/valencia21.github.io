@@ -34,7 +34,7 @@ The Effective Altruism movement seeks to figure out, of all the possible uses of
 
 80,000 Hours suggests the following on this topic[^3]:
 
-<center>*“...‘having a positive impact’ is about promoting welfare over the long term. However, we’re highly uncertain about this definition, so in practice we aim to consider other perspectives.”*</center>
+*<center>“...‘having a positive impact’ is about promoting welfare over the long term. However, we’re highly uncertain about this definition, so in practice we aim to consider other perspectives.”</center>*
 
 ### Considering moral frameworks
 
@@ -184,9 +184,12 @@ Over time, the following two points have led me to decrease the amount I donate 
 [^2]: Condensed from a [paper](https://drive.google.com/file/d/1rQu75k8uMFpdsp1y3JWlHP6kev3T-97N/view) by Will MacAskill on “The Definition of Effective Altruism”.
 [^3]: https://80000hours.org/key-ideas/#two-minute-summary
 [^4]: In moral philosophy, there is a notable distinction between *intrinsic* and *instrumental* value. For some intuition of this distinction, consider the following:
-- Think of a sublime natural landscape. Imagine now that this landscape exists, but no conscious being is able to experience it. Does the natural landscape have value without being experienced?  
-- Maybe you believe it does, in which case something about the landscape has intrinsic value - even without being experienced.
-- Maybe you believe it does not, the value provided by nature is instrumental; a person is able to experience its beauty, feel an emotion, and ultimately a positive subjective experience - or increased wellbeing - which in itself has intrinsic value.
+
+Think of a sublime natural landscape. Imagine now that this landscape exists, but no conscious being is able to experience it. Does the natural landscape have value without being experienced?  
+
+Maybe you believe it does, in which case something about the landscape has intrinsic value - even without being experienced.
+
+Maybe you believe it does not, the value provided by nature is instrumental; a person is able to experience its beauty, feel an emotion, and ultimately a positive subjective experience - or increased wellbeing - which in itself has intrinsic value.
 [^5]: Most people are likely to have a set of intrinsic values, rather than just one. [This article/talk](https://www.effectivealtruism.org/articles/ea-global-2018-intrinsic-values/) by Spencer Greenberg does a great job of explaining how one might discover their own set of intrinsic values.
 [^6]:For further reading on dealing with moral uncertainty, see [here](https://global.oup.com/academic/product/moral-uncertainty-9780198722274?cc=jp&lang=en&#) (available for free from the “Open Access” button).
 [^7]: https://80000hours.org/problem-profiles/climate-change/
