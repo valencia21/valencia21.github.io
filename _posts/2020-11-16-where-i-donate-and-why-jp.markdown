@@ -16,7 +16,7 @@ Effective Altruism日本チャプターを代表する人として、次の説�
 
 本記事では、お金を寄附する時[^1]に何を考えているかについて書きます。
 
-この考え方は、効果的利他主義（Effective Altruism - EA)との共通点が多いですが、「これはEA全体だ」をいう印象を控えましょう。EAについてより詳しい説明をご覧いただきたい場合、下記はおすすめです。
+この考え方は、効果的利他主義（Effective Altruism - EA)との共通点が多いですが、「これはEA全体だ」という印象を控えましょう。EAについてより詳しい説明をご覧いただきたい場合、下記はおすすめです。
 
 - [Misconceptions about Effective Altruism](https://80000hours.org/2020/08/misconceptions-effective-altruism/)
 - [An Introduction to Effective Altruism](https://www.effectivealtruism.org/articles/introduction-to-effective-altruism/)
