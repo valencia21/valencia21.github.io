@@ -93,7 +93,7 @@ GiveWell is a meta-charity that evaluates the effectiveness of charities in glob
 - Room for more funding
 - Transparency
 
-Using GiveWell’s recommendations, you can expect to a reasonable degree of certainty that your donation will have its intended effect - current estimates suggest that $5,000 given to the Against Malaria Foundation would save a life[^10][^11].
+Using GiveWell’s recommendations, you can expect to a reasonable degree of certainty that your donation will have its intended effect - current (Nov 2020) estimates suggest that $5,000 given to the Against Malaria Foundation would save a life[^10][^11].
 
 You can take a look at GiveWell’s recommended charities [here](https://www.givewell.org/charities/top-charities).
 
