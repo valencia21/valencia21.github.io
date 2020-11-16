@@ -160,7 +160,7 @@ Around this time I found some [particularly insightful essays](https://reducing-
 
 ### Late-2019 onwards
 
-I have made several donations to EA Funds; typically at a rate of 75% to the [Long-Term Future Fund](https://app.effectivealtruism.org/funds/far-future) and 25% to the [Effective Altruism Infrastructure Fund](https://app.effectivealtruism.org/funds/ea-community).
+I have made several donations to EA Funds, typically at a rate of 75% to the [Long-Term Future Fund](https://app.effectivealtruism.org/funds/far-future) and 25% to the [Effective Altruism Infrastructure Fund](https://app.effectivealtruism.org/funds/ea-community).
 
 I have also made smaller donations to [The Humane League](https://animalcharityevaluators.org/charity-review/the-humane-league/), which focuses on farm animal welfare, and the [Malaria Consortium](https://www.givewell.org/charities/malaria-consortium).
 
