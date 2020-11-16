@@ -177,7 +177,7 @@ I donated ~10% of my after tax income from 2016-2018, which I have since dropped
 Over time, the following two points have led me to decrease the amount I donate and increase the amount I save:
 
 - Where I think may be the best place to donate has changed quite significantly in a short space of time; I now acknowledge a deep uncertainty.
-- I could potentially have a bigger impact by saving as much as possible to give myself more freedom to study and work on impactful projects. If I have such freedom + excess funds, the option to donate still exists.
+- I could potentially have a bigger impact by saving as much as possible to give myself more freedom to study and work on impactful projects[^17]. If I have such freedom + excess funds, the option to donate still exists.
 
 ## Footnotes
 [^1]: Donating money is just one way of having an impact. Unless earning vast amounts of money is your comparative advantage by a large margin, it may well be that you can have a far larger impact by working on a specific cause area.
