@@ -9,7 +9,7 @@ categories:
 * Do not remove this line (it will not be displayed)
 {:toc}
 
-Effective Altruism日本チャプターの代表として、次の説明をすることが多いです：
+Effective Altruism日本チャプターを代表する人として、次の説明をすることが多いです：
 
 1. できるだけ世界を良くしたいです。
 2. ですので、「ｘ」という団体に寄付して、その団体が「ｙ」という世界的問題を解決するように働いています。
