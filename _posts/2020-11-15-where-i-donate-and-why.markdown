@@ -106,7 +106,7 @@ When considering a place to donate in global health (where more information is a
 
 80,000 Hours [surveyed people](https://80000hours.org/2017/05/most-people-report-believing-its-incredibly-cheap-to-save-lives-in-the-developing-world/) on how much they think the most effective charities are relative to the median and found the typical response to be that the best charities are about 66% more effective (a normal distribution). Instead, the difference is more like 10x-100x (a fat-tail distribution); choosing a top charity over the median charity can have a huge effect on expected impact.
 
-#### Reducing existential risk (larger-scale outcome, lower probability)
+#### 2. Reducing existential risk (larger-scale outcome, lower probability)
 
 The future holds a lot of potential. The Earth could remain habitable for 600-800 million years, so there could be about 21 million future generations, and they could lead great lives, whatever you think “great” consists of[^12].
 
