@@ -1,23 +1,25 @@
 ---
 layout: post
 title:  "The Case for Cage-free Campaigns"
-date:   2020-11-15 17:00:00 +0900
+date:   2020-12-29 18:30:00 +0900
 categories:
 ---
+
+*Thank you to Yuki Takahashi (Animal Rights Center Japan) and Maho Cavalier (The Humane League) for proofreading and corrections. Any and all mistakes my own.*
+
+**Contents**
+* Do not remove this line (it will not be displayed)
+{:toc}
 
 ## TL;DR
 
 - Farm animal welfare is considered a high-priority cause area by the Effective Altruism community due to the sheer scale, neglectedness and tractability of the problem.
 - Layer hens are one of the most farmed animals both globally and in Japan (excluding fish).
-- Battery cages are plausibly extremely bad; many sources have evaluated a life in a battery cage to provide the lowest levels of welfare across all farmed land animals.
+- Battery cages are plausibly extremely bad; some sources have evaluated a life in a battery cage to provide the lowest levels of welfare across all farmed land animals.
 - Over 99% of layer hens in Japan are raised in battery cages, subject to the same terrible conditions as hens overseas.
 - Campaigning for corporations to source eggs from cage-free producers has been historically successful, plausibly affecting 310-570 million layer hens per year globally.
 - A dollar spent on corporate cage-free campaigns can potentially affect between 12-160 years of chicken life.
-- There are organizations that are still working on generating cage-free pledges from corporations that still have room for further funding; you could potentially have a big impact by donating.
-
-**Contents**
-* Do not remove this line (it will not be displayed)
-{:toc}
+- There are organizations still working on generating cage-free pledges from corporations that still have room for further funding; you could potentially have a big impact by donating.
 
 ## What is Effective Altruism (EA)?
 
@@ -52,13 +54,13 @@ As an input to prioritize cause areas for which resources could be used, EA adop
 
 ### Number of battery hens - Global
 
-[This study](https://link.springer.com/article/10.1007/s10806-019-09810-2) suggests that the global population of layer hens is between 6.1 billion (International Egg Commission) and 7.6 billion (FAOSTAT), not too different to the human population.
+[This study](https://link.springer.com/article/10.1007/s10806-019-09810-2) suggests that the global population of layer hens is between 6.1 billion (International Egg Commission) and 7.6 billion (FAOSTAT), close to the total human population.
 
 The proportion of layer hens in battery cages depends on location; RSPCA Australia suggests that around 66% of layer hens live in battery cages, while the proportion of layer hens in battery cages in the US has decreased from 94% in 2014 to 80% in 2019.[^5]
 
 ### Number of battery hens - Japan
 
-According to Animal Rights Center Japan, around 176 million layer hens are raised in Japan, of which over 99% of are raised in battery cages[^6] - this would equate to over 170 million layer hens.
+According to Animal Rights Center, around 176 million layer hens are raised in Japan. Of these, over 99% of are raised in battery cages[^6] - equating to over 170 million layer hens.
 
 ### Welfare of battery hens - Global
 
@@ -66,9 +68,9 @@ Largely referencing [Cause Area Report: Corporate Campaigns for Animal Welfare](
 
 A life in a battery cage is plausibly extremely bad. Hens are kept in tiny spaces, live on wire racks, are unable to move around, and are kept from engaging in natural behaviours such as foraging, dust-bathing, and socialising.[^7]
 
-There have been some other attempts to estimate layer hen welfare in battery cages:
+There have been attempts to estimate layer hen welfare in battery cages:
 
-- Charity Entrepreneurship’s weighted animal welfare index gives battery caged hens a -57 out of a scale from -100 to +100, the joint worst score on their scale along with factory farmed turkeys.[^8] This scale factors in criteria such as death rate/reason, human preference (from behind the veil of ignorance), disease/injury etc.[^9]
+- Charity Entrepreneurship’s weighted animal welfare index gives battery caged hens a -57 out of a scale from -100 to +100, the joint worst score on their scale along with factory farmed turkeys.[^8] This scale factors in criteria such as death rate/reason, human preference (from behind the veil of ignorance), disease/injury among other factors.[^9]
 - In “Compassion, by the Pound”, F. Bailey Norwood gives caged egg-laying hens a welfare score of -8 (again, the worst score on his scale) and cage-free egg-laying hens a score of +2 (see Table 8.2 on p. 229).[^10]
 
 ### Welfare of battery hens - Japan
@@ -82,7 +84,7 @@ A [survey](http://jlta.lin.gr.jp/report/animalwelfare/H26/factual_investigation_
 - Across all 3,094 poultry houses with cages, just 12 (0.3%) used enriched cages.
 - 240 houses used no cage (free-range or open[^11])
 
-A breeding space of 430-555 square cm is recommended per poultry by the Japan Livestock Technology Association (2016)[^12], although it depends on the breed (line) of the breeding poultry and other conditions.
+A breeding space of 430-555 square cm is recommended per poultry by the Japan Livestock Technology Association (2016)[^12], although it depends on conditions such as the line of the breeding poultry.
 
 The recommended temperature inside a poultry house should be between 20-30 degrees Celsius[^13], but this depends on whether the structure is a windless poultry house or open poultry house. Another recommendation is to observe the state of the poultry at least once per day[^14], but there are cases in which many cages are stacked on top of each other (in some cases as many as 14) which would make it very difficult to check the state and temperature of each poultry in each corner.
 
@@ -104,7 +106,7 @@ Some approaches to improving animal welfare can be described as abolitionist, ba
 
 While we can adopt an abolitionist standpoint as an individual (i.e. by going vegan), it would be extraordinarily difficult to adopt this as a society (i.e. by outlawing meat consumption entirely) given its current state.
 
-Incrementalist approaches can also be applied on a personal (i.e. flexitarianism) and society level. While incrementalist approaches may have to concede that they aren’t completely morally justified[^16], their likelihood of success means that outcomes could be much better in expectation.
+An incrementalist approach takes into account the current state and structure of the world, taking a step in the direction of improvement. Such approaches can be applied on a personal level (i.e. flexitarianism), or a society level (i.e. improving the lives of farmed animals). While incrementalist approaches may have to concede that they aren’t completely morally justified since animals are still exploited to some degree[^16], their likelihood of success means that outcomes could be much better in expectation.
 
 ### Corporate cage-free campaigns
 
@@ -125,11 +127,9 @@ While very approximate, Lewis Bollard of Open Philanthropy Project gave his [sub
 
 Open Philanthropy Project (OPP) believes that most US egg producers will switch to [indoor multi-tier aviary systems](http://www.thepoultrysite.com/articles/929/modern-aviary-design/) if they transition away from battery cages.[^20] After investigating the difference in welfare between battery cages and aviary systems in [this article](https://www.openphilanthropy.org/focus/us-policy/farm-animal-welfare/how-will-hen-welfare-be-impacted-transition-cage-free-housing), OPP appears to believe tentatively that aviary systems are better for layer hens for the following reasons:
 
-- Each hen will be provided with 1.6 to 2.1 times as much space, as well as some degree of ability to perch, forage, dustbathe, and nest (none of which are possible in a battery cage, and all of which appear to be valuable according to hens’ revealed preferences in the research we have seen so far).
+- Each hen will be provided with 1.6 to 2.1 times as much space, as well as some degree of ability to perch, forage, dustbathe, and nest (none of which are possible in a battery cage, and all of which appear to be valuable according to hens’ revealed preferences).
 - Although increased mortality rates were seen in aviary systems, producers have a financial incentive to reduce mortality on their own.
 - Only a fraction of layer hens are affected by higher mortality rates, while all receive the behavioural benefits.
-
-Maho of The Humane League Japan notes that knowledge and training of aviary systems in Japan is limited.
 
 ### How cost effective are cage-free campaigns?
 
@@ -156,7 +156,6 @@ If the above has sparked or rekindled an interest in improving the lives of laye
 [Animal Charity Evaluators](https://animalcharityevaluators.org/), who aspire to find and promote the most effective ways to help animals.
 
 [Open Philanthropy Project](https://www.openphilanthropy.org/focus/us-policy/farm-animal-welfare), who have done extensive research on farm animal welfare as a cause area and have provided grants to various projects.
-
 
 ## Footnotes
 [^1]: Condensed from a [paper](https://drive.google.com/file/d/1rQu75k8uMFpdsp1y3JWlHP6kev3T-97N/view) by Will MacAskill on “The Definition of Effective Altruism”.
