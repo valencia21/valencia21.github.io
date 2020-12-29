@@ -5,7 +5,7 @@ date:   2020-12-29 18:30:00 +0900
 categories:
 ---
 
-*Thank you to Yuki Takahashi (Animal Rights Center Japan) and Maho Cavalier (The Humane League) for proofreading and corrections. Any and all mistakes my own.*
+*Thank you to Yuki Takahashi (Animal Rights Center Japan) and Maho Cavalier (The Humane League Japan) for proofreading and corrections. Any and all mistakes my own.*
 
 **Contents**
 * Do not remove this line (it will not be displayed)
