@@ -16,7 +16,7 @@ The [*adstock*](https://en.wikipedia.org/wiki/Advertising_adstock) function was 
 
 MMM has also been the subject of several recent research papers at Google, including a [summary of challenges in implementation](https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/45998.pdf) and a [Bayesian approach to estimating the adstock function](https://storage.googleapis.com/pub-tools-public-publication-data/pdf/b20467a5c27b86c08cceed56fc72ceadb875184a.pdf).
 
-This post serves as a step in my learning journey, purely for practice, building a traditional MMM by framing it as a simple optimization problem without incorporating adstock.
+This post serves as a step in my learning journey, purely for practice, building a traditional MMM by framing it as a simple optimization problem without incorporating adstock. I hope to cover improvements to the naive model in separate blog posts.
 
 ## Naive Approach
 
