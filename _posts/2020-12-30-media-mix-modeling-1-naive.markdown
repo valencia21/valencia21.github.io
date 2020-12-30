@@ -28,7 +28,7 @@ This post serves as a step in my learning journey, purely for practice, building
 
 Taking a naive approach, a linear regression on historical sales data can be represented by the equation below:
 
-*<center>R = x1+x2...+y1+y2...+z1+z2...</center>*
+*<center>R = x1 + x2... + y1 + y2... + z1 + z2...</center>*
 
 Where *R* is revenue, each *x* represents an ad channel, each *y* represents a  control variable (such as season, price) and each *z* represents a parameter (such as baseline sales without any advertising).
 
@@ -50,23 +50,23 @@ Where each *c* represents the ad channel coefficient (relationship between chann
 
 There may be additional business requirements that constrain spending. Following are three examples, including their representation as linear constraints.
 
-### Constraint 1: Total budget should not exceed ¥1,000,000
+#### Constraint 1: Total budget should not exceed ¥1,000,000
 
 *<center>x1 + x2 + x3 <= 1,000,000</center>*
 
-### Constraint 2: Spend in channel 1 should not exceed 45% of total spending
+#### Constraint 2: Spend in channel 1 should not exceed 45% of total spending
 
 *<center>x1 <= 0.45(x1+x2+x3)</center>*
 
-### Constraint 3: Spend in channels 1 & 2 should not exceed 60% of total spending
+#### Constraint 3: Spend in channels 1 & 2 should not exceed 60% of total spending
 
 *<center>x1 + x2 <= 0.6(x1+x2+x3)</center>*
 
 ## SciPy implementation
 
-The SciPy library provides a few optimization algorithms that can be applied to this use case. For an optimizer that takes into account constraints but not diminishing returns we can use the [linprog](https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.linprog.html) class.
+The SciPy library provides a few optimization algorithms that can be applied to this use case. For an optimizer that takes into account constraints but not diminishing returns, we can use the [linprog](https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.linprog.html) class.
 
-In the case below, there are 3 channels (*a*,*b*,*c*) subject to the constraints above and set the coefficients such that *a* > *b* > *c*. As expected, the optimizer suggests:
+In the case below, there are 3 channels (*a*,*b*,*c*) subject to the constraints above, and the coefficients have been set such that *a* > *b* > *c*. As expected, the optimizer suggests:
 
 - With a budget of ¥1,000,000 (constraint 1),
 - ¥450,000 should be spent on channel *a* (constraint 2)
