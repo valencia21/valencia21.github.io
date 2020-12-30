@@ -44,7 +44,7 @@ Theoretically, the regression should return realistic coefficients for each ad c
 
 In its simplest form, the resulting revenue given spend in 3 marketing channels, without accounting for lag or diminishing returns, can be expressed as follows:
 
-*<center>Revenue = c1x1 + c2x2 + c3x3</center>*
+*<center>R = c1x1 + c2x2 + c3x3</center>*
 
 Where each *c* represents the ad channel coefficient (relationship between channel spend and revenue) and each *x* represents total spend in that channel.
 
