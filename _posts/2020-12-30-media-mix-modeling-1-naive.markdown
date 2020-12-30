@@ -32,7 +32,7 @@ Taking a naive approach, a linear regression on historical sales data can be rep
 
 Where *R* is revenue, each *x* represents an ad channel, each *y* represents a  control variable (such as season, price) and each *z* represents a parameter (such as baseline sales without any advertising).
 
-There are some obvious drawbacks to the naive Approach:
+There are some obvious drawbacks to the naive approach:
 
 - Coefficients only capture the relationship between the ad channel and revenue during the time period for the data provided, not accounting for lag or diminishing returns.
 - Control variables and model parameters may be difficult to estimate without appropriate priors.
