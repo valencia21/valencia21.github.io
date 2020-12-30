@@ -5,7 +5,7 @@ date:   2020-12-30 18:00:00 +0900
 categories:
 ---
 
-Media Mix Modeling (MMM) is a common approach to understanding the causal impact of marketing spend on revenue.
+Media Mix Modeling (MMM) is a common approach to understanding the causal impact of marketing spend on revenue. It can be used to output a recommended level of spending across marketing channels.
 
 Traditionally, these have been simple regression models built from historical marketing spend and revenue data, also incorporating control variables such as fluctuations in price, seasonality, other promotions etc.
 
