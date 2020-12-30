@@ -1,181 +1,99 @@
 ---
 layout: post
-title:  "The Case for Cage-free Campaigns"
-date:   2020-12-29 18:30:00 +0900
+title:  "Media Mix Modeling - Step 1 (A Naive Approach)"
+date:   2020-12-30 18:00:00 +0900
 categories:
 ---
 
-*Thank you to Yuki Takahashi (Animal Rights Center Japan) and Maho Cavalier (The Humane League Japan) for proofreading and corrections. Any and all mistakes my own.*
+Media Mix Modeling (MMM) is a common approach to understanding the causal impact of marketing spend on revenue.
 
-**Contents**
-* Do not remove this line (it will not be displayed)
-{:toc}
+Traditionally, these have been simple regression models built from historical marketing spend and revenue data, also incorporating control variables such as fluctuations in price, seasonality, other promotions etc.
 
-## TL;DR
+The [*adstock*](https://en.wikipedia.org/wiki/Advertising_adstock) function was subsequently introduced to capture the following:
 
-- Farm animal welfare is considered a high-priority cause area by the Effective Altruism community due to the sheer scale, neglectedness and tractability of the problem.
-- Layer hens are one of the most farmed animals both globally and in Japan (excluding fish).
-- Battery cages are plausibly extremely bad; some sources have evaluated a life in a battery cage to provide the lowest levels of welfare across all farmed land animals.
-- Over 99% of layer hens in Japan are raised in battery cages, subject to the same terrible conditions as hens overseas.
-- Campaigning for corporations to source eggs from cage-free producers has been historically successful, plausibly affecting 310-570 million layer hens per year globally.
-- A dollar spent on corporate cage-free campaigns can potentially affect between 12-160 years of chicken life.
-- There are organizations still working on generating cage-free pledges from corporations that still have room for further funding; you could potentially have a big impact by donating.
+- Lag effect - advertising campaigns increase awareness, but this awareness has a half-life that decays over time.
+- Diminishing returns - above a certain threshold, incremental spend on advertising may have a linear increase on reach, but this is not matched by a linear increase in demand.
 
-## What is Effective Altruism (EA)?
+MMM has also been the subject of several recent research papers at Google, including a [summary of challenges in implementation](https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/45998.pdf) and a [Bayesian approach to estimating the adstock function](https://storage.googleapis.com/pub-tools-public-publication-data/pdf/b20467a5c27b86c08cceed56fc72ceadb875184a.pdf).
 
-The world has many problems, many different ways of solving these problems, and only limited resources.
+This post serves as a step in my learning journey, purely for practice, building a traditional MMM by framing it as a simple optimization problem without incorporating adstock.
 
-The Effective Altruism movement seeks to figure out, of all the possible uses of these resources, which uses produce the most good, impartially considered.[^1]
+## Naive Approach
 
-## Why focus on farm animal welfare?
+- Use historic spend/performance data to get a set of coefficients that capture the relationship between spend in various channels and revenue.
+- Given a set of business requirements for how the budget should be spent, output a recommended level of spending across each marketing channel.
+- That’s it.
 
-As an input to prioritize cause areas for which resources could be used, EA adopts the following “INT” framework:
+## Obtaining Coefficients
 
-**Importance:** How many people (and sentient beings) are affected by an issue and by how much?
+Taking a naive approach, a linear regression on historical sales data can be represented by the equation below:
 
-*An estimated 50 billion chickens a year (as of 2014) are slaughtered for food – excluding male chicks and unproductive hens killed in egg production. In comparison, each year ~1.5 billion pigs, ~500m sheep, ~440m goats and ~300m cattle (excluding dairy) are slaughtered.[^2][^3]*
+*<center>R = x1+x2...+y1+y2...+z1+z2...</center>*
 
-*Intuitively, depriving an animal of basic needs (i.e. keeping a chicken in a cage) could cause immense suffering. There have been some efforts to understand the scale of animal suffering on factory farms:*
+Where *R* is revenue, each *x* represents an ad channel, each *y* represents a  control variable (such as season, price) and each *z* represents a parameter (such as baseline sales without any advertising).
 
-- [How good is The Humane League compared to the Against Malaria Foundation?](https://forum.effectivealtruism.org/posts/ahr8k42ZMTvTmTdwm/how-good-is-the-humane-league-compared-to-the-against) (EA Forum)
-- [2017 Report on Consciousness and Moral Patienthood](https://www.openphilanthropy.org/2017-report-consciousness-and-moral-patienthood) (Open Philanthropy Project)
+Given this naive methodology, there are some obvious drawbacks:
 
-**Neglectedness:** What degree of resources are already focused on resolving an issue?
+- Coefficients only capture the relationship between the ad channel and revenue during the time period for the data provided, not accounting for lag or diminishing returns.
+- Control variables and model parameters may be difficult to estimate without appropriate priors.
+- The actual data required for this regression would need to be consistent across channels and at the same level of granularity, which may prove difficult in practice (where this may be spread across departments/ad agencies)
 
-*While the scale is immense, the amount of resources dedicated to reducing suffering on factory farms is relatively small. According to Animal Charity Evaluators, 99.6% of animals used and killed in the US exist on farms, but just 0.8% of donations go to charities working on farm animal welfare.[^4]*
+Theoretically, the regression should return realistic coefficients for each ad channel to be used in the next step.
 
-![Comparing donations to animal charities](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/animal_donations.png)
+## Framing as an optimization problem
 
-**Tractability:** How easy is it to make progress resolving an issue?
+In its simplest form, the resulting revenue given spend in 3 marketing channels, without accounting for lag or diminishing returns, can be expressed as follows:
 
-*With successes seen in the promotion of alternative protein, political advocacy and corporate campaigning among others, there are some plausible ways to make progress.*
+*<center>Revenue = c1x1 + c2x2 + c3x3</center>*
 
-## The focus on battery hens
+Where each *c* represents the ad channel coefficient (relationship between channel spend and revenue) and each *x* represents total spend in that channel.
 
-### Number of battery hens - Global
+There may be additional business requirements that constrain spending. Following are three examples, including their representation as linear constraints.
 
-[This study](https://link.springer.com/article/10.1007/s10806-019-09810-2) suggests that the global population of layer hens is between 6.1 billion (International Egg Commission) and 7.6 billion (FAOSTAT), close to the total human population.
+### Constraint 1: Total budget should not exceed ¥1,000,000
 
-The proportion of layer hens in battery cages depends on location; RSPCA Australia suggests that around 66% of layer hens live in battery cages, while the proportion of layer hens in battery cages in the US has decreased from 94% in 2014 to 80% in 2019.[^5]
+*<center>x1 + x2 + x3 <= 1,000,000</center>*
 
-### Number of battery hens - Japan
+### Constraint 2: Spend in channel 1 should not exceed 45% of total spending
 
-According to Animal Rights Center, around 176 million layer hens are raised in Japan. Of these, over 99% of are raised in battery cages[^6] - equating to over 170 million layer hens.
+*<center>x1 <= 0.45(x1+x2+x3)</center>*
 
-### Welfare of battery hens - Global
+### Constraint 3: Spend in channels 1 & 2 should not exceed 60% of total spending
 
-Largely referencing [Cause Area Report: Corporate Campaigns for Animal Welfare](https://founderspledge.com/research/fp-animal-welfare) (Pages 20-23)
+*<center>x1 + x2 <= 0.6(x1+x2+x3)</center>*
 
-A life in a battery cage is plausibly extremely bad. Hens are kept in tiny spaces, live on wire racks, are unable to move around, and are kept from engaging in natural behaviours such as foraging, dust-bathing, and socialising.[^7]
+## SciPy implementation
 
-There have been attempts to estimate layer hen welfare in battery cages:
+The SciPy library provides a few optimization algorithms that can be applied to this use case. For an optimizer that takes into account constraints but not diminishing returns we can use the [linprog](https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.linprog.html) class.
 
-- Charity Entrepreneurship’s weighted animal welfare index gives battery caged hens a -57 out of a scale from -100 to +100, the joint worst score on their scale along with factory farmed turkeys.[^8] This scale factors in criteria such as death rate/reason, human preference (from behind the veil of ignorance), disease/injury among other factors.[^9]
-- In “Compassion, by the Pound”, F. Bailey Norwood gives caged egg-laying hens a welfare score of -8 (again, the worst score on his scale) and cage-free egg-laying hens a score of +2 (see Table 8.2 on p. 229).[^10]
+In the case below, there are 3 channels (*a*,*b*,*c*) subject to the constraints above and set the coefficients such that *a* > *b* > *c*. As expected, the optimizer suggests:
 
-### Welfare of battery hens - Japan
+- With a budget of ¥1,000,000 (constraint 1),
+- ¥450,000 should be spent on channel *a* (constraint 2)
+- ¥150,000 on channel *b* (constraint 3)
+- The remaining ¥400,000 on channel *c*.
 
-In short, a battery cage in Japan is no different to battery cages elsewhere.
+[Implementation in Colab](https://colab.research.google.com/drive/1JB_Gbdp2Tk7Zjc-EZIoZLrk1E6laUcA5?usp=sharing)
 
-A [survey](http://jlta.lin.gr.jp/report/animalwelfare/H26/factual_investigation_lay_h26.pdf) on the state of layer hen farming by the Agriculture and Livestock Industries Corporation yielded the following key points (n=398 farms, 55% response rate):
+{% highlight python %}
+from scipy.optimize import linprog
 
-- 8.1% of farms raise over 500,000 hens at any one time, 0.5% raise more than 3 million.
-- Of the poultry houses managed across all respondents, 60.2% were open and the remaining 39.8% were windowless.
-- Across all 3,094 poultry houses with cages, just 12 (0.3%) used enriched cages.
-- 240 houses used no cage (free-range or open[^11])
+budget = 1000000
 
-A breeding space of 430-555 square cm is recommended per poultry by the Japan Livestock Technology Association (2016)[^12], although it depends on conditions such as the line of the breeding poultry.
+fun = [-a.coef,-b.coef,-c.coef]
+lhs_ineq = [[1,1,1],[1,0,0],[1,1,0]]
+rhs_ineq = [budget,(budget * 0.45),(budget * 0.6)]
 
-The recommended temperature inside a poultry house should be between 20-30 degrees Celsius[^13], but this depends on whether the structure is a windless poultry house or open poultry house. Another recommendation is to observe the state of the poultry at least once per day[^14], but there are cases in which many cages are stacked on top of each other (in some cases as many as 14) which would make it very difficult to check the state and temperature of each poultry in each corner.
+res = linprog(fun, A_ub=lhs_ineq, b_ub=rhs_ineq, method="revised simplex")
+{% endhighlight %}
 
-### Challenges specific to Japan
-
-*The following was written after chatting with Maho Cavalier (The Humane League Japan).*
-
-Farm animal welfare awareness, education and expertise are all lacking in Japan relative to the state of the movement in the West. This is mirrored in Japanese policy-making; in 2020, the Animal Protection Index gave Japan a “G” (the lowest possible) rating for “Protecting Animals used in Farming”.[^15]
-
-Japanese business culture creates some barriers to progress, including a low tolerance for risk and the requirement for group consensus in decision making (see a take on this by McKinsey [here](https://www.mckinsey.com/business-functions/organization/our-insights/a-more-effective-model-for-managing-change-in-japan-could-accelerate-economic-growth#)).
-
-Elsewhere, neither the Japanese government nor banks/trading houses offer financial incentives to go cage-free. From a practical standpoint, cage-free eggs can also be difficult to obtain and supply to far-out locations.
-
-## What can be done to improve the lives of layer hens?
-
-### Abolitionism vs Incrementalism
-
-Some approaches to improving animal welfare can be described as abolitionist, based on an understanding that any use of animals is unjustified and should be abandoned entirely.
-
-While we can adopt an abolitionist standpoint as an individual (i.e. by going vegan), it would be extraordinarily difficult to adopt this as a society (i.e. by outlawing meat consumption entirely) given its current state.
-
-An incrementalist approach takes into account the current state and structure of the world, taking a step in the direction of improvement. Such approaches can be applied on a personal level (i.e. flexitarianism), or a society level (i.e. improving the lives of farmed animals). While incrementalist approaches may have to concede that they aren’t completely morally justified since animals are still exploited to some degree[^16], their likelihood of success means that outcomes could be much better in expectation.
-
-### Corporate cage-free campaigns
-
-Animal welfare groups including [The Humane League](https://thehumaneleague.org/) have been engaging in campaigns to request corporations to pledge that, by a specified time, they will source their eggs from layer hens that have not been raised in any type of cage.
-
-Such campaigns have historically been very successful, the graph below showing how many corporations have made pledges to transition to cage-free in the US and internationally.[^17]
-
-![Cage-free pledges](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/international_pledges.png)
-
-The Humane League has played a major role in getting corporations to undertake cage-free pledges and is [currently recommended as a top charity](https://animalcharityevaluators.org/charity-review/the-humane-league/) by Animal Charity Evaluators.
-
-While very approximate, Lewis Bollard of Open Philanthropy Project gave his [subjective 90% confidence intervals](https://animalcharityevaluators.org/research/methodology/subjective-confidence-interval/) for the number of animals impacted by cage-free pledges:[^18]
-
-- 210–270 million hens used by companies that made cage-free commitments in the U.S.[^19]
-- 100–300 million hens used by companies that made cage-free commitments in other countries.
-
-### What is the alternative to battery cages?
-
-Open Philanthropy Project (OPP) believes that most US egg producers will switch to [indoor multi-tier aviary systems](http://www.thepoultrysite.com/articles/929/modern-aviary-design/) if they transition away from battery cages.[^20] After investigating the difference in welfare between battery cages and aviary systems in [this article](https://www.openphilanthropy.org/focus/us-policy/farm-animal-welfare/how-will-hen-welfare-be-impacted-transition-cage-free-housing), OPP appears to believe tentatively that aviary systems are better for layer hens for the following reasons:
-
-- Each hen will be provided with 1.6 to 2.1 times as much space, as well as some degree of ability to perch, forage, dustbathe, and nest (none of which are possible in a battery cage, and all of which appear to be valuable according to hens’ revealed preferences).
-- Although increased mortality rates were seen in aviary systems, producers have a financial incentive to reduce mortality on their own.
-- Only a fraction of layer hens are affected by higher mortality rates, while all receive the behavioural benefits.
-
-### How cost effective are cage-free campaigns?
-
-There are two excellent posts on the Effective Altruism forum with relation to this question that are definitely worth reading:
-
-- [Corporate campaigns affect 9 to 120 years of chicken life per dollar spent](https://forum.effectivealtruism.org/posts/L5EZjjXKdNgcm253H/corporate-campaigns-affect-9-to-120-years-of-chicken-life)
-
-This post from EA-affiliated research organisation [Rethink Priorities](https://www.rethinkpriorities.org/) suggests that each dollar spent on corporate cage-free campaigns (including their supporting activities) plausibly affects 12 to 160 years of chicken life.
-
-- [How good is The Humane League compared to the Against Malaria Foundation?](https://forum.effectivealtruism.org/posts/ahr8k42ZMTvTmTdwm/how-good-is-the-humane-league-compared-to-the-against)
-
-It is important to acknowledge difficulty and uncertainty when comparing the effectiveness of organisations working on the welfare of humans vs animals. Quoting from the post below:
-
-*<center>“In this model, in most of the most plausible scenarios, THL appears better than AMF. The difference in cost-effectiveness is usually within 1 or 2 orders of magnitude. Under some sets of reasonable assumptions, AMF looks better than THL. Because we have so much uncertainty, one could reasonably believe that AMF is more cost-effective than THL or one could reasonably believe that THL is more cost-effective than AMF.”</center>*
-
-### Potential for more funding
-
-As of November 2020, Animal Charity Evaluators estimates that The Humane League has room for an additional $0.66 million in 2021 before reaching diminishing returns, and that additional funds would be used to expand the team in Japan.[^21]
-
-## Further Information
-
-If the above has sparked or rekindled an interest in improving the lives of layer hens or farmed animals in general, I recommend the following resources:
-
-[Animal Charity Evaluators](https://animalcharityevaluators.org/), who aspire to find and promote the most effective ways to help animals.
-
-[Open Philanthropy Project](https://www.openphilanthropy.org/focus/us-policy/farm-animal-welfare), who have done extensive research on farm animal welfare as a cause area and have provided grants to various projects.
-
-## Footnotes
-[^1]: Condensed from a [paper](https://drive.google.com/file/d/1rQu75k8uMFpdsp1y3JWlHP6kev3T-97N/view) by Will MacAskill on “The Definition of Effective Altruism”.
-[^2]: [https://www.weforum.org/agenda/2019/02/chart-of-the-day-this-is-how-many-animals-we-eat-each-year/](https://www.weforum.org/agenda/2019/02/chart-of-the-day-this-is-how-many-animals-we-eat-each-year/)
-[^3]: Fish are not included in this list and could plausibly be farmed in much higher numbers and in worse conditions. For more information, see: [https://www.fishwelfareinitiative.org/](https://www.fishwelfareinitiative.org/)
-[^4]: [https://animalcharityevaluators.org/donation-advice/why-farmed-animals/](https://animalcharityevaluators.org/donation-advice/why-farmed-animals/)
-[^5]: [https://www.openphilanthropy.org/blog/will-companies-make-good-cage-free-pledges](https://www.openphilanthropy.org/blog/will-companies-make-good-cage-free-pledges)
-[^6]: [https://www.hopeforanimals.org/eggs/235/](https://www.hopeforanimals.org/eggs/235/)
-[^7]: [https://founderspledge.com/research/fp-animal-welfare](https://founderspledge.com/research/fp-animal-welfare) Page 20-23
-[^8]: [https://docs.google.com/spreadsheets/d/1dWzh0Se0nhbPxe2Ye3o-tr3BoOBtdiCbMkpPuw2rBFE/edit#gid=14772511](https://docs.google.com/spreadsheets/d/1dWzh0Se0nhbPxe2Ye3o-tr3BoOBtdiCbMkpPuw2rBFE/edit#gid=14772511)
-[^9]: [https://docs.google.com/document/d/1VYfWgqCQFmGNrtTyroXYRhrWaTaqFcf4pRHctl6URlw/edit](https://docs.google.com/document/d/1VYfWgqCQFmGNrtTyroXYRhrWaTaqFcf4pRHctl6URlw/edit)
-[^10]: Relying on information provided by the [“How good is The Humane League compared to the Against Malaria Foundation?”](https://forum.effectivealtruism.org/posts/ahr8k42ZMTvTmTdwm/how-good-is-the-humane-league-compared-to-the-against) blog post.
-[^11]: 平飼い (free-range), 放し飼い (open) - These terms are used in the survey but are not well-defined.
-[^12]: [http://jlta.lin.gr.jp/report/animalwelfare/shishin/layers_28.9.pdf]( http://jlta.lin.gr.jp/report/animalwelfare/shishin/layers_28.9.pdf)
-[^13]: [http://jlta.lin.gr.jp/report/animalwelfare/shishin/layers_28.9.pdf]( http://jlta.lin.gr.jp/report/animalwelfare/shishin/layers_28.9.pdf)
-[^14]: [http://jlta.lin.gr.jp/report/animalwelfare/shishin/layers_28.9.pdf]( http://jlta.lin.gr.jp/report/animalwelfare/shishin/layers_28.9.pdf)
-[^15]: [https://api.worldanimalprotection.org/country/japan](https://api.worldanimalprotection.org/country/japan)
-[^16]: If animals are given net positive lives, there could plausibly be a moral case in favour of animal product consumption. In this case, failure to bring into existence billions of animals with good lives would also constitute a huge loss of potential welfare. I note this with extreme uncertainty since I haven’t explored some fundamental questions in depth (i.e. can animals realistically be given good lives at scale/in this economic system? is killing an animal still justified after it has been given a good experience? etc.)
-[^17]: [https://forum.effectivealtruism.org/posts/uNo7qLBn5ErjYwBmd/lewis-bollard-lessons-learned-in-farm-animal-welfare](https://forum.effectivealtruism.org/posts/uNo7qLBn5ErjYwBmd/lewis-bollard-lessons-learned-in-farm-animal-welfare)
-[^18]: [https://forum.effectivealtruism.org/posts/L5EZjjXKdNgcm253H/corporate-campaigns-affect-9-to-120-years-of-chicken-life](https://forum.effectivealtruism.org/posts/L5EZjjXKdNgcm253H/corporate-campaigns-affect-9-to-120-years-of-chicken-life)
-[^19]: The confidence interval is relatively narrow, partly because USDA has independently arrived at similar estimates, probably using a similar methodology. According to a 2018 USDA report, 230 companies that pledged to go cage-free in the U.S. together use about 225 million hens every year, which is nearly 70% of the U.S. flock.
-[^20]: [https://www.openphilanthropy.org/focus/us-policy/farm-animal-welfare/how-will-hen-welfare-be-impacted-transition-cage-free-housing](https://www.openphilanthropy.org/focus/us-policy/farm-animal-welfare/how-will-hen-welfare-be-impacted-transition-cage-free-housing)
-[^21]: [https://animalcharityevaluators.org/charity-review/the-humane-league/](https://animalcharityevaluators.org/charity-review/the-humane-league/)
+{% highlight python %}
+con: array([], dtype=float64)
+     fun: -305000.0
+ message: 'Optimization terminated successfully.'
+     nit: 3
+   slack: array([0., 0., 0.])
+  status: 0
+ success: True
+       x: array([450000., 150000., 400000.])
+{% endhighlight %}
