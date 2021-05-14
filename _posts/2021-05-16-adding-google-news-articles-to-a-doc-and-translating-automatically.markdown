@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Adding Google News articles to a doc and translating automatically"
+title:  "Adding Google News Articles to a Doc and Translating Automatically"
 date:   2021-05-14 18:00:00 +0900
 categories:
 ---
@@ -13,7 +13,7 @@ This job is regular, manual, and will be required in regions outside Japan - a p
 
 ## Program Features
 
-Makes use of SerpAPI ($50 a month, up to 5,000 requests).
+Makes use of [*SerpAPI*](https://serpapi.com/news-results) ($50 a month, up to 5,000 requests).
 
 - Grabs 50 Google News results for a list of Japanese keywords you input - keyword list and number of results can be changed.
 - Adds them to a Google Sheet in order of latest to oldest.
