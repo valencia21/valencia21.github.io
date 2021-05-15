@@ -5,7 +5,7 @@ date:   2021-05-14 18:00:00 +0900
 categories:
 ---
 
-As of April 2021, I have taken on a freelance project for a [*consultancy*](https://prtimes.jp/main/html/rd/p/000000002.000076032.html) that helps both Japanese corporations switch to using cage-free eggs, and cage-free egg producers in Japan increase their production capacity and acquire new customers.
+As of April 2021, I have taken on a freelance project for a [*consultancy*](https://prtimes.jp/main/html/rd/p/000000002.000076032.html) that helps both Japanese corporations switch to using cage-free eggs, and cage-free egg producers in Japan increase their production capacity/acquire new customers.
 
 As part of this project, I have been asked to gather any relevant industry news in Japanese, add it to a doc somewhere and roughly translate the content.
 
@@ -61,6 +61,8 @@ Since the automation program creates a new file, whoever uses this sheet should 
 This was resolved by adding the formula directly to a Pandas dataframe, including the cells that should be translated.
 
 {% highlight python %}
+title_EN = []
+
 for i in range(1,number_of_results + 1):
   title_EN.append("=GOOGLETRANSLATE(C%s)" % i)
 
