@@ -24,9 +24,9 @@ Since the authors of the book lay out an explicit approach, I have also attempte
 
 Moral Uncertainty has some focus on the following, not covered in this post, including: 
 
-Justification of taking an expectation of moral uncertainty in the first place.
-Objections to arguments that suggest that intertheoretic comparisons are impossible.
-Discussion on metaethical and practical implications.
+- Justification of taking an expectation of moral uncertainty in the first place.
+- Objections to arguments that suggest that intertheoretic comparisons are impossible.
+- Discussion on metaethical and practical implications.
 
 I wholeheartedly recommend anyone interested in a much more coherent and comprehensive version of this post to read the original book!
 
