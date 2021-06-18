@@ -62,7 +62,9 @@ From Moral Uncertainty (page 129):
 
 See the image below for a visual representation of the two theories:
 
+{:refdef: style="text-align: center;"}
 ![Amplified Theories](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/amplified_theories.PNG){: style="text-align:center"}
+{: refdef}
 
 ### Incomparable interval-scale theories
 
