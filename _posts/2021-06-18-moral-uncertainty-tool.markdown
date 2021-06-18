@@ -62,7 +62,7 @@ From Moral Uncertainty (page 129):
 
 See the image below for a visual representation of the two theories:
 
-![Amplified Theories](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/amplified_theories.png){: style="text-align:center"}
+![Amplified Theories](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/amplified_theories.PNG){: style="text-align:center"}
 
 ### Incomparable interval-scale theories
 
@@ -156,7 +156,7 @@ Examples include:
 
 In the analogy with MEC, rather than individuals we have theories, and over a social welfare functional we have a theory of decision-making under moral uncertainty.
 
-![Social Choice Theory Analogy](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/social_choice_theory_analogy.png){: style="text-align:center"}
+![Social Choice Theory Analogy](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/social_choice_theory_analogy.PNG){: style="text-align:center"}
 
 There are some key differences:
 
