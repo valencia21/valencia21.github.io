@@ -18,9 +18,9 @@ Since the authors of the book lay out an explicit approach, I have also attempte
 
 *In its current state, this tool is quite user-unfriendly. To use, copy a version of the tool to your Google Drive. Further instructions at the bottom of this post.
 
-*For the reader, please bear in mind that I am by no means an expert at any of the topics touched upon here, and my breakdown and tool may contain mistakes.*
+*For the reader, please bear in mind that I am by no means an expert at any of the topics touched upon here, and my summary and tool may contain mistakes.*
 
-*Much of this post is simply a rearranging of the ideas in Moral Uncertainty, and my interpretation of those ideas. I claim no part of these ideas as my own work; full credit goes to the authors. Any and all mistakes my own.*
+*Much of this post is simply a rearranging of the ideas in Moral Uncertainty and my interpretation of those ideas. I claim no part of these ideas as my own work; full credit goes to the authors. Any and all mistakes my own.*
 
 Moral Uncertainty has some focus on the following, not covered in this post, including: 
 
@@ -206,7 +206,7 @@ To summarise, we now have the following ways to take an expectation over moral t
 
 - **Amplified theories:** Regular expected value calculation.
 - **Incomparable interval-scale theories:** Variance voting.
-- **Ordinal-scale and Interval-scale theories:** Borda rule.
+- **Ordinal-scale and interval-scale theories:** Borda rule.
 
 So how do we combine these approaches in practice?
 
