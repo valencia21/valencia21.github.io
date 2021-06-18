@@ -5,7 +5,7 @@ date:   2021-06-18 15:00:00 +0900
 categories:
 ---
 
-Having really enjoyed listening to [80,000 Hours](https://80000hours.org/podcast/) episodes featuring Will MacAskill, Hilary Greaves, Toby Ord and the recent interview with Christian Tarsney, I decided it would be fun to dig in deeper to a specific area to gain a more in-depth understanding.
+Having really enjoyed listening to [80,000 Hours](https://80000hours.org/podcast/) episodes featuring Will MacAskill, Hilary Greaves, Toby Ord and the recent interview with Christian Tarsney, I decided it would be fun to dig deeper into a specific area to gain a more in-depth understanding.
 
 This post focuses on the book [Moral Uncertainty](https://static1.squarespace.com/static/5f55ea9b5c71b34be165f6a0/t/5f5a2b4931fca70e0d129d95/1599744853131/Moral+Uncertainty.pdf), authored by Will MacAskill, Krister Bykvist and Toby Ord, which lays out a theoretical approach to taking an expectation across moral theories in a way that is analogous to empirical uncertainty.
 
