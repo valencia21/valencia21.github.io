@@ -104,7 +104,7 @@ I tried out a few of the different models available in Magenta. Deeper neural ne
   sound-font visualizer="#myVisualizer">
 </midi-player>
 <midi-visualizer type="piano-roll" id="myVisualizer"></midi-visualizer>
-
+</br>
 
 [Lookback RNN](https://magenta.tensorflow.org/2016/07/15/lookback-rnn-attention-rnn/): This model was designed to help guide the training process towards understanding music structure in the following ways:
 
@@ -118,7 +118,7 @@ This was the only model I trained on the NES Music Database dataset, and the out
   sound-font visualizer="#myVisualizer1">
 </midi-player>
 <midi-visualizer type="piano-roll" id="myVisualizer1"></midi-visualizer>
-
+</br>
 
 [Polyphony RNN](https://github.com/magenta/magenta/tree/main/magenta/models/polyphony_rnn): This model is capable of generating melodies with simulataneous notes. The output below came from a model trained at layer_size=[256,256], batch_size=16.
 
@@ -127,7 +127,7 @@ This was the only model I trained on the NES Music Database dataset, and the out
   sound-font visualizer="#myVisualizer2">
 </midi-player>
 <midi-visualizer type="piano-roll" id="myVisualizer2"></midi-visualizer>
-
+</br>
 
 [Music VAE](https://magenta.tensorflow.org/music-vae) (2-bar): There are versions of the Music VAE that produce more than 2 bars, but even a shallow network ([64,64]) with batch_size = 1 required more VRAM than my laptop could offer. Thus the result was quite underwhelming, but tracks generated showed more variation than other models.
 
