@@ -9,7 +9,7 @@ categories:
 
 ## Objective
 
-For this project, I wanted to generate NES-style music using some form of machine learning.
+For this project, I wanted to generate NES-style music using some form of machine learning - be it with an existing model or by creating one myself.
 
 ## Planning
 
