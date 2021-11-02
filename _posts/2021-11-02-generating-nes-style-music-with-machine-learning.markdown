@@ -120,7 +120,7 @@ This was the only model I trained on the NES Music Database dataset, and the out
 <midi-visualizer type="piano-roll" id="myVisualizer1"></midi-visualizer>
 <br />
 
-[Polyphony RNN](https://github.com/magenta/magenta/tree/main/magenta/models/polyphony_rnn): This model is capable of generating melodies with simulataneous notes. The output below came from a model trained at layer_size=[256,256], batch_size=16.
+[Polyphony RNN](https://github.com/magenta/magenta/tree/main/magenta/models/polyphony_rnn): This model is capable of generating melodies with simultaneous notes. The output below came from a model trained at layer_size=[256,256], batch_size=16.
 
 <midi-player
   src="https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/audio/polyphony_rnn_256.mid"
