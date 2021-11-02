@@ -33,7 +33,7 @@ An RNN is the most basic architecture for allowing information to persist. The o
 
 LSTMs were created to solve the problem that previous states have decreasing influence as they get further from a present prediction. 
 
-For example, consider trying to predict the last words in the sentence "Alice is allergic to nuts.......She can't eat __peanut butter__." The further back the previous sentence, the harder it is for a NN to understand the context.
+For example, consider trying to predict the last words in the sentence "Alice is allergic to nuts.......She can't eat __peanut butter__." The further back the previous sentence, the harder it is for a neural network to understand the context.
 
 An LSTM has "cells" containing an input, output and forget gate to control the flow of information that is important to creating a prediction. 
 
@@ -81,7 +81,7 @@ In order to acheive this, the inputs are encoded not as single points, but as pr
 
 While Variational Autoencoder architectures do not inherently allow information to persist, researchers at Google were able to combine a VAE with a Recurrent Neural Network to create a [MusicVAE](https://magenta.tensorflow.org/music-vae). This model is useful for creating short but more detailed melodies, between 2-16 bars.
 
-### Datasets
+## Datasets
 
 - [VGMusic](https://vgmusic.com)
   - I ended up scraping all MIDIs from the [NES page](https://www.vgmusic.com/music/console/nintendo/nes/) as my main dataset.
