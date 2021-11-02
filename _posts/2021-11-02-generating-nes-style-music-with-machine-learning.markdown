@@ -127,7 +127,7 @@ This was the only model I trained on the NES Music Database dataset, and the out
   sound-font visualizer="#myVisualizer4">
 </midi-player>
 <midi-visualizer type="piano-roll" id="myVisualizer4"></midi-visualizer>
-<br />
+
 
 I also liked this one even though it isn't necessarily polyphonic.
 
