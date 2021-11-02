@@ -39,7 +39,7 @@ An LSTM has "cells" containing an input, output and forget gate to control the f
 
 Google Magenta's [Melody RNN](https://github.com/magenta/magenta/blob/main/magenta/models/melody_rnn/README.md) is an example of an LSTM built for music.
 
-#### Transformers
+#### [Transformers](https://jalammar.github.io/illustrated-transformer/)
 
 Transformers use the concept of "self-attention" to persist event information across longer gaps. In self-attention, each event (i.e. a word in a sentence) is given a Query vector, a Key vector and a Value vector. In the word example, the amount of attention to be paid to a particular word from the perspective of another word in the sentence is calculated by taking the dot product of the query vector for the particular word with the key vector for other words in the input sentence. This is called the self-attention score.
 
@@ -47,7 +47,7 @@ After scores are divided by 8 to obtain more stable gradients, self-attention sc
 
 There is [a paper](https://openreview.net/pdf?id=rJe4ShAcF7) on building a Music Transformer, with [example usage](https://magenta.tensorflow.org/nobodys-songs).
 
-#### Variational Autoencoder
+#### [Variational Autoencoders (VAE)](https://towardsdatascience.com/understanding-variational-autoencoders-vaes-f70510919f73)
 
 Another type of neural net architecture of note is the Variational Autoencoder, which is typically used to compose deep generative models. While they lack the ability to persist information from events, they are far more apt at extracting detailed features from data and generating an output that corresponds to that level of detail.
 
@@ -95,6 +95,7 @@ I tried out a few of the different models available in Magenta. Deeper neural ne
 </midi-player>
 <midi-visualizer type="piano-roll" id="myVisualizer"></midi-visualizer>
 
+
 [Lookback RNN](https://magenta.tensorflow.org/2016/07/15/lookback-rnn-attention-rnn/): This model was designed to help guide the training process towards understanding music structure in the following ways:
 
 - Events from 1-2 bars prior are also input to the model so patterns can be more readily recognised.
@@ -104,22 +105,24 @@ This was the only model I trained on the NES Music Database dataset, and the out
 
 <midi-player
   src="https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/audio/lookback_rnn_256_nesmidi.mid"
-  sound-font visualizer="#myVisualizer">
+  sound-font visualizer="#myVisualizer1">
 </midi-player>
-<midi-visualizer type="piano-roll" id="myVisualizer"></midi-visualizer>
+<midi-visualizer type="piano-roll" id="myVisualizer1"></midi-visualizer>
+
 
 [Polyphony RNN](https://github.com/magenta/magenta/tree/main/magenta/models/polyphony_rnn): This model is capable of generating melodies with simulataneous notes. The output below came from a model trained at layer_size=[256,256], batch_size=16.
 
 <midi-player
   src="https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/audio/polyphony_rnn_256.mid"
-  sound-font visualizer="#myVisualizer">
+  sound-font visualizer="#myVisualizer2">
 </midi-player>
-<midi-visualizer type="piano-roll" id="myVisualizer"></midi-visualizer>
+<midi-visualizer type="piano-roll" id="myVisualizer2"></midi-visualizer>
 
-Music VAE (2-bar): There are versions of the Music VAE that produce more than 2 bars, but even a shallow network ([64,64]) with batch_size = 1 required more VRAM than my laptop could offer. Thus the result was quite underwhelming, but tracks generated showed more variation than other models.
+
+[Music VAE](https://magenta.tensorflow.org/music-vae) (2-bar): There are versions of the Music VAE that produce more than 2 bars, but even a shallow network ([64,64]) with batch_size = 1 required more VRAM than my laptop could offer. Thus the result was quite underwhelming, but tracks generated showed more variation than other models.
 
 <midi-player
   src="https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/audio/2bar_music_vae_128.mid"
-  sound-font visualizer="#myVisualizer">
+  sound-font visualizer="#myVisualizer3">
 </midi-player>
-<midi-visualizer type="piano-roll" id="myVisualizer"></midi-visualizer>
+<midi-visualizer type="piano-roll" id="myVisualizer3"></midi-visualizer>
