@@ -19,7 +19,7 @@ Music mainfests certain properties that exist ubiquitously across pieces and gen
 
 These properties relate to the persistence of some event throughout a single piece - the existence of an event informs later events. A neural network that generates new music well needs to information from events to persist and develop.
 
-While not strictly necessary to produce an output for this project, I wanted to take the opportunity to understand the types of architecture that would be best suited to music generation. There are neural net architectures that allow information to persist over longer gaps:
+While not strictly necessary to produce an output for this project, I wanted to take the opportunity to understand the types of architecture that would be best suited to music generation.
 
 #### [Recurrent Neural Networks (RNNs)](https://www.ibm.com/cloud/learn/recurrent-neural-networks)
 
@@ -35,13 +35,23 @@ LSTMs were created to solve the problem that previous states have decreasing inf
 
 For example, consider trying to predict the last words in the sentence "Alice is allergic to nuts.......She can't eat __peanut butter__." The further back the previous sentence, the harder it is for a NN to understand the context.
 
-An LSTM has "cells" containing an input, output and forget gate to control the flow of information that is important to creating a prediction.
+An LSTM has "cells" containing an input, output and forget gate to control the flow of information that is important to creating a prediction. 
+
+{:refdef: style="text-align: center;"}
+![RNN Structure](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/2021-11-02/LSTM3-chain.png){: style="text-align:center"}
+{: refdef}
+
+An explanation of LSTM cells is beyond the scope of ths blog post, but those interested can read more [here]((https://colah.github.io/posts/2015-08-Understanding-LSTMs/)).
 
 Google Magenta's [Melody RNN](https://github.com/magenta/magenta/blob/main/magenta/models/melody_rnn/README.md) is an example of an LSTM built for music.
 
 #### [Transformers](https://jalammar.github.io/illustrated-transformer/)
 
 Transformers use the concept of "self-attention" to persist event information across longer gaps. In self-attention, each event (i.e. a word in a sentence) is given a Query vector, a Key vector and a Value vector. In the word example, the amount of attention to be paid to a particular word from the perspective of another word in the sentence is calculated by taking the dot product of the query vector for the particular word with the key vector for other words in the input sentence. This is called the self-attention score.
+
+{:refdef: style="text-align: center;"}
+![RNN Structure](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/2021-11-02/transformer_self-attention_visualization.png){: style="text-align:center"}
+{: refdef}
 
 After scores are divided by 8 to obtain more stable gradients, self-attention scores are then passed through a Softmax operation so all scores a positive and add up to 1. This gives the probability that one word should pay attention to another.
 
