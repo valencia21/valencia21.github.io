@@ -43,8 +43,6 @@ An LSTM has "cells" containing an input, output and forget gate to control the f
 
 An explanation of LSTM cells is beyond the scope of ths blog post, but those interested can read more [here]((https://colah.github.io/posts/2015-08-Understanding-LSTMs/)).
 
-Google Magenta's [Melody RNN](https://github.com/magenta/magenta/blob/main/magenta/models/melody_rnn/README.md) is an example of an LSTM built for music.
-
 #### [Transformers](https://jalammar.github.io/illustrated-transformer/)
 
 Transformers use the concept of "self-attention" to persist event information across longer gaps. In self-attention, each event (i.e. a word in a sentence) is given a Query vector, a Key vector and a Value vector. In the word example, the amount of attention to be paid to a particular word from the perspective of another word in the sentence is calculated by taking the dot product of the query vector for the particular word with the key vector for other words in the input sentence. This is called the self-attention score.
@@ -89,7 +87,33 @@ While Variational Autoencoder architectures do not inherently allow information 
 
 ## Implementation
 
+The first step of this project was to map out different ways of generating new music with machine learning. The following is an overview of some of the projects I discovered:
+
+### [Recurrent Neural Networks for Video Game Music Generation](https://scholarworks.sjsu.edu/cgi/viewcontent.cgi?article=1606&context=etd_projects)
+
+In this paper, MIDI files are vectorized using the pretty_midi Python library and then input into a simple RNN with a single LSTM layer as per the image below.
+
+{:refdef: style="text-align: center;"}
+![RNN for Music Generation](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/2021-11-02/nes_model.png){: style="text-align:center"}
+{: refdef}
+
+### [Conversion to bitmap matrices, input to Autoencoder network](https://github.com/rotifyld/music-generation)
+
+MIDI files were converted into images, described as "bitmap-like matrices", in order to make the most of machine learning techniques from image-processing. These images were then fed into a convolutional autoencoder.
+
+{:refdef: style="text-align: center;"}
+![Bitmap-like Matrix](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/2021-11-02/song.png){: style="text-align:center"}
+{: refdef}
+
+### [Creating a Pop Music Generator with the Transformer](https://towardsdatascience.com/creating-a-pop-music-generator-with-the-transformer-5867511b382a)
+
+Starts by using the Python music21 library to convert piano sheet music into tokens, which is then input to a transformer language model from the fastAI library. You can play around wth the pre-trained model [here](https://musicautobot.com/song/de1fa62a9c209491d4fd81f1d1ceb55e).
+
+### [Google Magenta](https://magenta.tensorflow.org/)
+
 Google Magenta already has pre-trained models that can be further trained on your own dataset to generate new music. To get my desired output, this seemed like the path of least resistance - I wouldn't want the project to turn into a [shed](https://cassandraxia.com/writing/shed.html).
+
+An overview of Magenta models can be found [here](https://magenta.tensorflow.org/research).
 
 After pip installing magenta alone did not allow me to use my GPU in Tensorflow, I created a new conda virtual environment, first conda installed tensorflow-gpu=2.3.0, then pip installed magenta, and then downgraded the numba library co-installed with magenta to version 0.48.0.
 
