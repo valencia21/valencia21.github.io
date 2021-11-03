@@ -94,7 +94,7 @@ The first step of this project was to map out different ways of generating new m
 In this paper, MIDI files are vectorized using the pretty_midi Python library and then input into a simple RNN with a single LSTM layer as per the image below.
 
 {:refdef: style="text-align: center;"}
-![RNN for Music Generation](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/2021-11-02/nes_model.png){: style="text-align:center"}
+![RNN for Music Generation](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/2021-11-02/nes_model.PNG){: style="text-align:center"}
 {: refdef}
 
 #### [Conversion to bitmap matrices, input to Autoencoder network](https://github.com/rotifyld/music-generation)
