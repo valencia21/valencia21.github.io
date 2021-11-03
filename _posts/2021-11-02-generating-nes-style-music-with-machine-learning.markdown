@@ -97,7 +97,7 @@ In this paper, MIDI files are vectorized using the pretty_midi Python library an
 ![RNN for Music Generation](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/2021-11-02/nes_model.PNG){: style="text-align:center"}
 {: refdef}
 
-#### [Conversion to bitmap matrices, input to Autoencoder network](https://github.com/rotifyld/music-generation)
+#### [Convolutional Autoencoder](https://github.com/rotifyld/music-generation)
 
 MIDI files were converted into images, described as "bitmap-like matrices", in order to make the most of machine learning techniques from image-processing. These images were then fed into a convolutional autoencoder.
 
