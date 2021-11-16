@@ -35,7 +35,7 @@ In this example, I present the perspectives of both Person A (the person his or 
 
 While Person A may have insight into their own character, their objectives/intentions and ultimately decide how to express themselves, Person B only has access to their behaviours.
 
-This means that Person B has to infer much about the intentions, objectives and character of A just by examining their behaviours. This is highlighted by the left-facing arrow at the bottom of the image below, where a darker colour represents the depth of understanding of each step from the perspective of B.
+This means that Person B has to infer much about the intentions, objectives and character of A just by examining their behaviours. This is highlighted by the left-facing arrow at the bottom of the image, where a darker colour represents the depth of understanding of each step from the perspective of B.
 
 The case in which person B infers information about person A’s character based on their behaviour is seen below:
 
