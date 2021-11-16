@@ -5,7 +5,7 @@ date:   2021-11-16 15:00:00 +0900
 categories:
 ---
 
-Here, I present arguments for leaning in the direction of tolerating the behaviour of others.
+Here, I present an argument for leaning in the direction of tolerating the behaviour of others.
 
 ## Intolerance Leads to Bad Outcomes
 
@@ -13,7 +13,7 @@ We are often too intolerant of the behaviour of other people, even going as far 
 
 - We are more likely to assume the worst about someone, and act as though the worst case is true.
 - We are more likely to miscommunicate.
-- We are more likely to cast aside relationships with people , including family, friends and partners, due to our own misjudgment.
+- We are more likely to cast aside relationships with people, including family, friends and partners, due to our own misjudgment.
 - Etc….
 
 ## Understanding Character vs Behaviour
@@ -80,7 +80,7 @@ While we’d like to think of ourselves as perfectly rational beings, this is no
 - We often have subtle subconscious objectives, such as social validation, that influence our conscious objectives.
 - We don’t explicitly derive our objectives from our character, since this requires deep introspection.
 
-But let’s say that person B interprets a behaviour as relating to an intention which serves a specific objective, it is still important to be conscious that:
+But let’s say that person B correctly interprets a behaviour as relating to an intention which serves a specific objective, it is still important to be conscious that:
 
 ### 4. Character is complex
 
@@ -91,9 +91,13 @@ But let’s say that person B interprets a behaviour as relating to an intention
 
 Before we come to some judgment about a person, we should condition our judgment on a complex set of possibilities. Given uncertainty at each stage, we should lean towards tolerance.
 
-I also think this framework is useful in communication, since you can talk in terms of an abstract intention rather than something fundamental about a person’s character, and slowly work your way towards a deeper understanding.
+I think this framework could also be useful in communication. _You can talk in terms of an abstract intention rather than something fundamental about a person’s character, and slowly work your way towards a deeper understanding.
 
-*“The fact that you did x, which shows just how y you are.”* versus *“I noticed you did x, can you help me understand why?”*
+*“The fact that you did x, which shows just how y you are.”*
+
+versus
+
+*“I noticed you did x, can you help me understand why?”*
 
 ## Other comments
 
