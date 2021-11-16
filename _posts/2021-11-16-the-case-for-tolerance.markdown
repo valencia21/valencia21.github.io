@@ -93,7 +93,7 @@ Before we come to some judgment about a person, we should condition our judgment
 
 I think this framework could also be useful in communication. You can talk in terms of an abstract intention rather than something fundamental about a person’s character, and slowly work your way towards a deeper understanding.
 
-*“The fact that you did x, which shows just how y you are.”*
+*“The fact that you did x, shows just how y you are.”*
 
 versus
 
