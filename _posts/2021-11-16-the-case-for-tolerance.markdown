@@ -78,7 +78,7 @@ The distance between the character of person A and their intention could lead to
 While we’d like to think of ourselves as perfectly rational beings, this is not the case.
 
 - We often have subtle subconscious objectives, such as social validation, that influence our conscious objectives.
-- We don’t explicitly derive our objectives from our character, since this requires deep introspection.
+- We often don't explicitly derive our objectives from our character, since this requires deep introspection.
 
 But let’s say that person B correctly interprets a behaviour as relating to an intention which serves a specific objective, it is still important to be conscious that:
 
