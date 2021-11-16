@@ -91,7 +91,7 @@ But let’s say that person B correctly interprets a behaviour as relating to an
 
 Before we come to some judgment about a person, we should condition our judgment on a complex set of possibilities. Given uncertainty at each stage, we should lean towards tolerance.
 
-I think this framework could also be useful in communication. _You can talk in terms of an abstract intention rather than something fundamental about a person’s character, and slowly work your way towards a deeper understanding.
+I think this framework could also be useful in communication. You can talk in terms of an abstract intention rather than something fundamental about a person’s character, and slowly work your way towards a deeper understanding.
 
 *“The fact that you did x, which shows just how y you are.”*
 
