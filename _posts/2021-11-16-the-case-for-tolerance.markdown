@@ -28,10 +28,10 @@ In this example, I present the perspectives of both Person A (the person his or 
 ![Arrow](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/2021-11-16/flowchart_arrow.png){: style="text-align:center"}
 {: refdef}
 
-**Behaviour:** Specific actions, utterances of a person.
-**Intention:** The reasoning behind why someone exhibits a certain behaviour, in order to achieve an objective.
-**Objective:** The conscious or subconscious goals of a person.
-**Character:** A person’s intrinsic personality (at a specific point in time).
+**Behaviour:** Specific actions, utterances of a person.<br />
+**Intention:** The reasoning behind why someone exhibits a certain behaviour, in order to achieve an objective.<br />
+**Objective:** The conscious or subconscious goals of a person.<br />
+**Character:** A person’s intrinsic personality (at a specific point in time).<br />
 
 While Person A may have insight into their own character, their objectives/intentions and ultimately decide how to express themselves, Person B only has access to their behaviours.
 
