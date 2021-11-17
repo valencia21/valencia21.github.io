@@ -9,11 +9,11 @@ Here, I present an argument for leaning in the direction of tolerating the behav
 
 ## Intolerance Leads to Bad Outcomes
 
-We are often too intolerant of the behaviour of other people, even going as far as making assumptions about a person’s character. Making these swift conclusions can lead to bad outcomes:
+We are often too intolerant of the behaviour of other people, even going as far as making assumptions about a person’s character. Making these swift conclusions can lead to bad outcomes, since we are more likely to:
 
-- We are more likely to assume the worst about someone, and act as though the worst case is true.
-- We are more likely to miscommunicate.
-- We are more likely to cast aside relationships with people, including family, friends and partners, due to our own misjudgment.
+- Assume the worst about someone, and act as though the worst case is true.
+- Miscommunicate.
+- Cast aside relationships with people, including family, friends and partners, due to our own misjudgment.
 - Etc….
 
 ## Understanding Character vs Behaviour
@@ -82,7 +82,7 @@ While we’d like to think of ourselves as perfectly rational beings, this is no
 
 But let’s say that person B correctly interprets a behaviour as relating to an intention which serves a specific objective, it is still important to be conscious that:
 
-### 4. Character is complex
+### 4. Character is idiosyncratic
 
 - Who we are is the result of our personal experiences, which is not easy to model if you are not that person.
 - Our character is not fixed and can change over time.
