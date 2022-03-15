@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Predictive Models in Tensorflow + Blending Predictions from 3 Models"
+title:  "Predictive Models in Tensorflow + Blending Predictions from 3 Models (Part 2)"
 date:   2022-03-15 10:30:00 +0900
 categories:
 ---

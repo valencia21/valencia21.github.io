@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Predictive Models in Python with XGBoost, LightGBM and HyperOpt"
+title:  "Predictive Models in Python with XGBoost, LightGBM and HyperOpt (Part 1)"
 date:   2022-01-25 20:00:00 +0900
 categories:
 ---
