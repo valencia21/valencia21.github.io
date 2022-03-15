@@ -11,6 +11,6 @@ In [this notebook](https://htmlpreview.github.io/?https://github.com/valencia21/
 - Use the Weights and Biases (WandB) platform to select optimal hyperparameters and record experiments.
   - Experiments are evaluated using K-Fold Cross Validation. Mean RMSE across folds for each experiment are custom logged in WandB.
 - Make predictions.
-- Blend predictions from the previous post (XGBoost, LightGBM) and this post.
+- Blend predictions from the previous post (XGBoost, LightGBM) and this post (Neural Net).
   - By taking the mean of predictions, taking the weighted mean of predictions, and defining a meta-model.
   - Predictions are evaluated on a holdout dataset, kept separate from the training set since the beginning of the project.
