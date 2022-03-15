@@ -5,7 +5,7 @@ date:   2022-03-15 10:30:00 +0900
 categories:
 ---
 
-In [this notebook](https://github.com/valencia21/data-science-projects/blob/master/house-price-prediction/Models/tensorflow/tf_model_wrangling.ipynb), I use the following approach to generate predictions on the Kaggle House Price Dataset:
+In [this notebook](https://htmlpreview.github.io/?https://github.com/valencia21/data-science-projects/blob/master/house-price-prediction/Models/tensorflow/tf_model_final.html), I use the following approach to generate predictions on the Kaggle House Price Dataset:
 
 - Build a simple Sequential model in Keras/Tensorflow
 - Use the Weights and Biases (WandB) platform to select optimal hyperparameters and record experiments.
