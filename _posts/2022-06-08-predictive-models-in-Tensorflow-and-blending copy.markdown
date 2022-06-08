@@ -5,7 +5,7 @@ date:   2022-06-08 10:30:00 +0900
 categories:
 ---
 
-# The Problem with Deductive Falsification
+## The Problem with Deductive Falsification
 
 Many people believe that the way to do science, the proper objective of statistical inference, is to test null hypotheses. 
 This way of thinking was popularized by Karl Popper, who argued that we can better deepen our understanding of the world by developing hypotheses that are falsifiable. However, deductive falsification is impossible in the vast majority of contexts.
@@ -24,7 +24,7 @@ For the hypothesis that evolutionary changes are caused by natural selection, ag
 
 M<sub>II</sub> refers to a statistical model that can capture the expected frequency distribution of a quantity - a histogram. In this case, P<sub>0A</sub> would predict that alleles follow a power law distribution. A histogram shows this. However, P<sub>1B</sub> would predict the same power law distribution of alleles. The unfortunate lesson here is that applying a statistical model to test a hypothesis via some explanation is inherently extremely difficult. The same test may well produce the same result for a completely different hypothesis.
 
-# Developing Better Hypotheses
+## Developing Better Hypotheses
 
 One response to the above may be: "Why not develop more precise hypotheses?". Consider the hypothesis "All swans are white."
 
@@ -33,15 +33,15 @@ One response to the above may be: "Why not develop more precise hypotheses?". Co
 
 So, what next?
 
-# A Better Set of Tools
+## A Better Set of Tools
 
 Statistical Rethinking proposes four main tools to design inquiry, extract information, make predictions, and argue the case for some causal explanation of a phenomenon. These are:
 
-## Bayesian Data Analysis
+# Bayesian Data Analysis
 
 This process involves counting the number of ways you could get a set of observations. If an explanation can cause the data to arise in more ways, that explanation is more plausible. It turns out that if you have an idea of prior plausibility, you can use new information to update plausibility iteratively using Bayes' Theorem.
 
-## Model Comparison
+# Model Comparison
 
 Models can produce predictions. You should prefer models that produce better predictions. This may imply having some understanding of the future, but there are tools you can use without owning a crystal ball: Cross-validation and information criteria.
 
@@ -49,7 +49,7 @@ There is a trade-off when building predictive models between optimization and ge
 
 The tools here combat overfitting, allowing models to generalize better.
 
-## Multilevel Models
+# Multilevel Models
 
 While cross-validation and information criteria identify the risk of overfitting, multilevel models help us do something about it.
 
@@ -60,7 +60,7 @@ Observations are often clustered in ways that are not foreseen (for example, by 
 3. If the research question requires an explanation of variation across different dimensions, single-level models are less interpretable than multilevel models.
 4. Pre-averaging data across dimensions can remove variation, which removes important nuances in the model. Multilevel models preserve these nuances.
 
-## Graphical Causal Models
+# Graphical Causal Models
 
 Wind causes tree branches to sway, tree branches do not cause wind to blow. A statistical model would be awesome at finding this association, but it is absolutely terrible at describing what caused what.
 
@@ -71,7 +71,7 @@ Rather than relying on models alone, a complete picture requires background unde
 This can be done with graphical causal models, the simplest version of which is a directed acrylic graph (DAG).
 
 {:refdef: style="text-align: center;"}
-![hypothesis_process_model](https://en.wikipedia.org/wiki/File:Tred-G.svg){: style="text-align:center"}
+![DAG](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/2022-06-08/DAG.png){: style="text-align:center"}
 {: refdef}
 
 The creation of such graphs requires the use of information outside the data. While this sounds inherently unscientific, no model can accept data alone and give a reliable representation of causal mechanisms. Developing an understanding of reality is an iterative process of developing theories, judging the plausibility of each theory given the observations, and continuing to dig in the direction most likely to lead to truth.
