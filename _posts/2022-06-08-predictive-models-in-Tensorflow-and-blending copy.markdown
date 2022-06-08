@@ -7,10 +7,10 @@ categories:
 
 ## The Problem with Deductive Falsification
 
-Many people believe that the way to do science, the proper objective of statistical inference, is to test null hypotheses. 
+Many people believe that the best way to do science, the proper objective of statistical inference, is to test null hypotheses. 
 This way of thinking was popularized by Karl Popper, who argued that we can better deepen our understanding of the world by developing hypotheses that are falsifiable. However, deductive falsification is impossible in the vast majority of contexts.
 
-In Statistical Rethinking, the authors argue that many hypotheses correspond to the same process model. A process model explains an approximate mechanism by which a hypothesis is true. A traditional approach is then to use a statistical model to validate the process model. However, a single statistical model can validate process models that correspond to different hypotheses.
+The problem lies here: Many process models, explanations as to why a hypothesis is true, correspond to the same hypothesis. A traditional approach is then to use a statistical model to validate the explanation. But a single statistical model can validate explanations that correspond to different hypotheses.
 
 An example follows. Since the 1960s, evolutionary biologists have been interested in the idea that evolutionary changes in gene frequency are not caused by natural selection, but by mutation and drift. This leads to the two hypotheses in the diagram below.
 
@@ -22,7 +22,7 @@ For each hypothesis there are potentially hundreds of possible process models. I
 
 For the hypothesis that evolutionary changes are caused by natural selection, again there are many possible process models. The diagram shows two; a model in which selection favours certain alleles, and another in which selection fluctuates through time, favouring different alleles.
 
-M<sub>II</sub> refers to a statistical model that can capture the expected frequency distribution of a quantity - a histogram. In this case, P<sub>0A</sub> would predict that alleles follow a power law distribution. A histogram shows this. However, P<sub>1B</sub> would predict the same power law distribution of alleles. The unfortunate lesson here is that applying a statistical model to test a hypothesis via some explanation is inherently extremely difficult. The same test may well produce the same result for a completely different hypothesis.
+M<sub>II</sub> refers to a statistical model that can capture the expected frequency distribution of a quantity - a histogram. Process model P<sub>0A</sub> would predict that alleles follow a power law distribution. However, P<sub>1B</sub> would also entail that the distribution of alleles follows a power law. In this case, a statistical test seems to validate both the hypothesis that evolutionary changes in gene frequency are caused by natural selection, and the exact opposite.
 
 ## Developing Better Hypotheses
 
@@ -62,11 +62,11 @@ Observations are often clustered in ways that are not foreseen (for example, by 
 
 # Graphical Causal Models
 
-Wind causes tree branches to sway, tree branches do not cause wind to blow. A statistical model would be awesome at finding this association, but it is absolutely terrible at describing what caused what.
+Wind causes tree branches to sway, tree branches do not cause wind to blow. A statistical model would be awesome at finding this association, but it would be absolutely terrible at describing what caused what.
 
 To make matters worse, it turns out that causally incorrect models can make better predictions than causally correct models. This is because confounded relationships, where two variables X and Y appear to be correlated but in reality both are affected by an unobserved Z variable, are still real relationships. Observing swaying branches really would predict wind.
 
-Rather than relying on models alone, a complete picture requires background understanding of the question - and a reasonable causative mechanism to explain the plausibilities found.
+Rather than relying on models alone, a complete picture requires background understanding of the question - and a reasonable causative mechanism to explain the plausibility of the data.
 
 This can be done with graphical causal models, the simplest version of which is a directed acrylic graph (DAG).
 
