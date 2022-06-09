@@ -82,13 +82,11 @@ The creation of such graphs requires the use of information outside the data. Wh
 
 ## Small Worlds and Large Worlds
 
-There is a contrast between the small world of a model and the large world of reality. The small world should provide the best possible representation of the large world, given that it cannot incorporate all of its information.
-
-This chapter focuses on the small world.
+There is a contrast between the small world of a model and the large world of reality. The small world should provide the best possible representation of the large world, given that it cannot incorporate all of its information. This chapter focuses on the small world.
 
 ## Bayesian Inference
 
-Bayesian inference is simply counting and comparing possibilities. Consider a bag with four marbles in two colours, blue and white. There are 5 possible sequences:
+Bayesian models have a reasonable claim to being the optimal way of representing a large world with a small world, assuming the small world accurately descibes the large world. A Bayesian model uses Bayesian inference, which simply counts and compares possibilities. Consider a bag with four marbles in two colours, blue and white. There are 5 possible sequences:
 
 {:refdef: style="text-align: center;"}
 ![Marbles](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/2022-06-08/marbles.png){: style="text-align:center"}
@@ -100,13 +98,13 @@ Imagine you then pulled three marbles from the bag, in the order [B,W,B]. There 
 ![Possible Ways](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/2022-06-08/possible_ways.png){: style="text-align:center"}
 {: refdef}
 
-It turns out that, if you know the prior number of ways to produce [B,W,B], you can use this information to update on a 4th pick by multiplying the "prior" number of ways by the number of ways of producing the 4th pick. The example below shows the 4th pick as [B].
+It turns out that, if you know the "prior" number of ways to produce [B,W,B], you can use this information to update on a 4th pick by multiplying the prior by the number of ways of producing the 4th pick. The example below shows the 4th pick as [B].
 
 {:refdef: style="text-align: center;"}
 ![Updating](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/2022-06-08/update.png){: style="text-align:center"}
 {: refdef}
 
-This is formalized by the following formula, where ∝ means "as a proportion of":
+This is formalized below, where ∝ means "as a proportion of":
 
 {:refdef: style="text-align: center;"}
 ![Plausibility Formula](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/2022-06-08/plausibility.png){: style="text-align:center"}
@@ -120,7 +118,7 @@ You then need to standardize the number of ways into a probability, such that th
 
 ## Building a Model
 
-The book gives the example of trying to work out how much of the Earth's surface is covered by water with a simple experiment. You are given a hand-sized globe representing Earth. You toss it into the air and count the times your index finger is on water (W) or land (L).
+The book gives the example of trying to work out how much of the Earth's surface is covered by water with a simple experiment. You are given a hand-sized globe representing Earth. You toss it into the air and count the times your index finger lands on water (W) or land (L).
 
 In this case:
 
@@ -134,15 +132,17 @@ As you gain more information about the likelihood of W or L, you can update the 
 ![Updated Proportion of Water](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/2022-06-08/bayesian_updating.png){: style="text-align:center"}
 {: refdef}
 
+On the first toss the index finger landed on water. By the lights of the model, there is approximately 0% chance of a world with no water, and a high chance of the world being completely covered in water. On the second toss the index finger tounches land. There is approximately 0% chance of a world covered in either water or land, and the most plausible proportion p is 50/50. As the globe is tossed repeatedly, the most plausible p converges to its true value.
+
 This is a simple Bayesian small world model. It learns well, provided that it accurately describes the large world. However, a model's certainty is no guarantee of a good model, since it is confined to the information contained within the small world.
 
 ## Components of the Model
 
 There are three parts to a Bayesian model, all of which have a parallel in probability theory:
 
-1. The number of ways each conjecture could produce an observation.
-2. The accumulated number of ways each conjecture could produce the entire data.
-3. The initial plausibility of each conjectured cause of the data.
+1. The number of ways each conjecture could produce an observation
+2. The accumulated number of ways each conjecture could produce the entire data
+3. The initial plausibility of each conjectured cause of the data
 
 Since we are translating these parts to probability theory, we need to play by its rules.
 
@@ -160,7 +160,7 @@ In this case, you can define the plausiblity of any combination of W/L for a spe
 ![Binomial Distribution](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/2022-06-08/binomial_distribution.png){: style="text-align:center"}
 {: refdef}
 
-Read as: "*The counts of W and L are distributed binomially, with probability p of water on each toss.*
+Read as: "*The counts of W and L are distributed binomially, with probability p of water on each toss.*"
 
 Unobserved variables are typically called *parameters*. For each parameter, you must provide a distribution of prior probability (its prior). Without a strong intuition of prior, you can try different priors.
 
@@ -188,11 +188,9 @@ While parameters are continuous, you can get a good idea of the posterior distri
 
 ### Quadratic Approximation
 
-Under regular conditions, the peak of a posterior distribution will be almost Gaussian or "normal" - like a bell curve. Therefore, the posterior distribution can be approximated by a Gaussian distribution. This is useful since it can be completely described by the location of the centre (mean) and spread (variance).
+Under regular conditions, the peak of a posterior distribution will be almost Gaussian or "normal" - the familiar bell curve distribution. Therefore, the entire posterior distribution can be approximated by a Gaussian distribution. This is useful since a Gaussian distribution can be completely described by the location of the centre (mean) and spread (variance).
 
-There are optimization algorithms to find the peak of the distribution. When you calculate the plausibility of different sets of parameter values, you can calculate the slope corresponding to that plausibility on the posterior distribution by taking the derivative. Since you assume the distribution to be Gaussian and know the slope, you have an understanding of possible values that will take you up or down the slope to reach the peak.
-
-When you find the peak, understanding the curvature around the peak should give a good approximation of the entire posterior distribution.
+There are optimization algorithms to find the peak of the distribution. When you calculate the plausibility of different sets of parameter values, you can calculate the slope corresponding to that plausibility on the posterior distribution by taking the derivative. Since you assume the distribution to be Gaussian and know the slope, you have an understanding of possible values that will take you up or down the slope to reach the peak. When you find the peak, understanding the curvature around the peak should give a good approximation of the entire posterior distribution.
 
 Quadratic approximation often requires larger sample sizes, and can even remain inaccurate at thousands of samples. In that case, you may need to use another approximation.
 
