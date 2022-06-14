@@ -198,3 +198,86 @@ Quadratic approximation often requires larger sample sizes, and can even remain 
 
 Instead of approximating the posterior distribution directly, you can also draw samples from the posterior. This results in a collection of parameter values and their frequencies, which correspond directly to posterior plausibilities. This avoids having to model the posterior distribution entirely, making it possible to estimate very large models with far less compute.
 
+# Chapter 3
+
+Bayes' theorem is often introduced with an example in the following form:
+
+- A test correctly detects vampirism 95% of the time, but gives a false positive 1% of the time.
+- The population of vampires in the population is 0.01%.
+- What is the probability of a person being a vampire, given that they tested positive?
+
+This can be worked out with Bayes' theorem.
+
+{:refdef: style="text-align: center;"}
+![Bayes' Theorem Vampirism](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/2022-06-08/pr_vampire.png){: style="text-align:center"}
+{: refdef}
+
+Where:
+
+{:refdef: style="text-align: center;"}
+![Probability of positive](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/2022-06-08/pr_positive.png){: style="text-align:center"}
+{: refdef}
+
+This gives a probability of 8.7%, which can seem unintuitive. However, if you frame the problem differently it becomes more clear.
+
+- In a population of 100,000 people, 100 are vampires.
+- Of the 100 vampires, 95 will test positive for vampirism.
+- Of the 99,900 mortals, 999 will test positive for vampirism.
+
+Thus, 8.7% of positive tests come from actual vampires. This way of approaching the problem relies on sampling counts, and is known as the *frequency format* or *natural frequencies*.
+
+## Sampling from a Grid-Approximate Posterior
+
+ When you have a posterior distribution, you can generate samples from it. The image below shows a sample of 10,000 tosses from the previous globe tossing example:
+
+{:refdef: style="text-align: center;"}
+![Sampling](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/2022-06-08/sampling.png){: style="text-align:center"}
+{: refdef}
+
+The more samples you generate, the closer to the ideal posterior distribution you get.
+
+## Sampling to summarize
+
+With a posterior distribution in hand, you are now tasked with summarizing and interpreting the posterior distribution. The questions you may ask can be usefuly sorted into the following three categories:
+
+1. Intervals of defined boundaries
+
+Such as "What is the posterior probability that the proportion of water is less than 0.5?".
+
+2. Intervals of defined mass
+
+Otherwise known as *confidence interval*, or a *credible interval* when dealing with posterior distributions. The book uses the term *compatibility interval* to avoid the connotations associated with confidence and credibility. In the image below, the top row shows intervals of defined boundaries while the bottom row shows intervals of defined mass.
+
+{:refdef: style="text-align: center;"}
+![Compatibility Intervals](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/2022-06-08/compatibility_intervals.png){: style="text-align:center"}
+{: refdef}
+
+You may notice that are infinitely many compatibility intervals with the same mass, depending on where you place the interval. The Highest Posterior Density Interval (HPDI) is the narrowest interval with a specified proability mass. The following image shows the 50% HDPI for 3 globe tosses that resulted in [W,W,W].
+
+{:refdef: style="text-align: center;"}
+![HDPI](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/2022-06-08/50_HDPI.png){: style="text-align:center"}
+{: refdef}
+
+3. Point estimates
+
+Giving a single value to encapsulate a distribution is hardly ever necessary and often harmful. However, there are some questions you may want to ask of the distribution that could be useful. 
+
+One is the most plausible parameter, or the *maximum a posteriori* (MAP). You could also ask for the mean or median of the distribution. If you try to minimize the absolute loss between the real p and the one of the mean, median or mode, the median has the lowest loss (proof available in an endnote in the book). Minimizing quadratic loss (d-p)<sup>2</sup> leads to the mean. The loss function you use depends on the application.
+
+## Sampling to Simulate Prediction
+
+A model can give predictions. Simulating observations can check the robustness of a model and its predictions. In the globe tossing problem, given a value for p and a number of tosses, the binomial distribution implies a probability for each result. In the case of p=0.7 and n=2, the implied probability for 0,1,2 water (W) results is [0.09, 0.42, 0.49] repectively. This can be used to create dummy data, which can be used alongside samples from the posterior distribution to check validity.
+
+{:refdef: style="text-align: center;"}
+![Simulated Distribution](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/2022-06-08/simulated_distribution.png){: style="text-align:center"}
+{: refdef}
+
+## Model Checking
+
+All models are wrong to some extent. It is your job to assess how your model is wrong, and whether or not the model is still fit for purpose. One assumption of the globe tossing example is that each toss is independent of others. Looking at patterns over 9 tosses, the assumption is called into question.
+
+{:refdef: style="text-align: center;"}
+![Other Ways](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/2022-06-08/other_ways.png){: style="text-align:center"}
+{: refdef}
+
+In this case, the number of times each subsequent toss switched between W/L is inconsistent with the expected posterior distribution. This implies that each toss is influeced to some degree by the previous toss. This would result in a posterior distribution that eventually converges to the true p, but would take longer to do so.
