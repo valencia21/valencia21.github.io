@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Notes on Statistical Rethinking: Chapter 1 & 2"
+title:  "Notes on Statistical Rethinking: Chapters 1-3"
 date:   2022-06-08 10:30:00 +0900
 categories:
 ---
@@ -240,11 +240,11 @@ The more samples you generate, the closer to the ideal posterior distribution yo
 
 With a posterior distribution in hand, you are now tasked with summarizing and interpreting the posterior distribution. The questions you may ask can be usefully sorted into the following three categories:
 
-1. Intervals of defined boundaries
+**Intervals of defined boundaries**
 
 Such as "What is the posterior probability that the proportion of water is less than 0.5?".
 
-2. Intervals of defined mass
+**Intervals of defined mass**
 
 Otherwise known as *confidence interval*, or a *credible interval* when dealing with posterior distributions. The book uses the term *compatibility interval* to avoid the unwarranted connotations associated with the terms "confidence" and "credibility". In the image below, the top row shows intervals of defined boundaries while the bottom row shows intervals of defined mass.
 
@@ -258,7 +258,7 @@ You may notice that are infinitely many compatibility intervals with the same ma
 ![HDPI](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/2022-06-08/50_HDPI.png){: style="text-align:center"}
 {: refdef}
 
-3. Point estimates
+**Point estimates**
 
 Giving a single value to encapsulate a distribution is hardly ever necessary and often harmful. However, there are some questions you may want to ask of the distribution that could be useful. 
 
