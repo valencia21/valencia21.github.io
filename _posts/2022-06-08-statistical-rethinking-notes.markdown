@@ -238,7 +238,7 @@ The more samples you generate, the closer to the ideal posterior distribution yo
 
 ## Sampling to summarize
 
-With a posterior distribution in hand, you are now tasked with summarizing and interpreting the posterior distribution. The questions you may ask can be usefuly sorted into the following three categories:
+With a posterior distribution in hand, you are now tasked with summarizing and interpreting the posterior distribution. The questions you may ask can be usefully sorted into the following three categories:
 
 1. Intervals of defined boundaries
 
@@ -246,7 +246,7 @@ Such as "What is the posterior probability that the proportion of water is less 
 
 2. Intervals of defined mass
 
-Otherwise known as *confidence interval*, or a *credible interval* when dealing with posterior distributions. The book uses the term *compatibility interval* to avoid the connotations associated with confidence and credibility. In the image below, the top row shows intervals of defined boundaries while the bottom row shows intervals of defined mass.
+Otherwise known as *confidence interval*, or a *credible interval* when dealing with posterior distributions. The book uses the term *compatibility interval* to avoid the unwarranted connotations associated with the terms "confidence" and "credibility". In the image below, the top row shows intervals of defined boundaries while the bottom row shows intervals of defined mass.
 
 {:refdef: style="text-align: center;"}
 ![Compatibility Intervals](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/2022-06-08/compatibility_intervals.png){: style="text-align:center"}
@@ -262,11 +262,13 @@ You may notice that are infinitely many compatibility intervals with the same ma
 
 Giving a single value to encapsulate a distribution is hardly ever necessary and often harmful. However, there are some questions you may want to ask of the distribution that could be useful. 
 
-One is the most plausible parameter, or the *maximum a posteriori* (MAP). You could also ask for the mean or median of the distribution. If you try to minimize the absolute loss between the real p and the one of the mean, median or mode, the median has the lowest loss (proof available in an endnote in the book). Minimizing quadratic loss (d-p)<sup>2</sup> leads to the mean. The loss function you use depends on the application.
+One is the most plausible parameter, or the *maximum a posteriori* (MAP). You could also ask for the mean or median of the distribution. If you try to minimize the absolute loss between the real p and the one of the mean, median or mode, the median has the lowest loss (proof available in an endnote in the book). Minimizing quadratic loss (d-p)<sup>2</sup> leads to the mean. The loss function you choose to use depends on the question you are trying to answer.
 
 ## Sampling to Simulate Prediction
 
-A model can give predictions. Simulating observations can check the robustness of a model and its predictions. In the globe tossing problem, given a value for p and a number of tosses, the binomial distribution implies a probability for each result. In the case of p=0.7 and n=2, the implied probability for 0,1,2 water (W) results is [0.09, 0.42, 0.49] repectively. This can be used to create dummy data, which can be used alongside samples from the posterior distribution to check validity.
+A model can give predictions. Simulating observations can check the robustness of a model and its predictions. 
+
+In the globe tossing problem, given a value for p and a number of tosses, the binomial distribution implies a probability for each result. In the case of p=0.7 and n=2, the implied probability for 0, 1, and 2 water (W) results is [0.09, 0.42, 0.49] repectively. This can be used to create dummy data, which can be used alongside samples from the posterior distribution to check validity.
 
 {:refdef: style="text-align: center;"}
 ![Simulated Distribution](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/2022-06-08/simulated_distribution.png){: style="text-align:center"}
@@ -274,10 +276,12 @@ A model can give predictions. Simulating observations can check the robustness o
 
 ## Model Checking
 
-All models are wrong to some extent. It is your job to assess how your model is wrong, and whether or not the model is still fit for purpose. One assumption of the globe tossing example is that each toss is independent of others. Looking at patterns over 9 tosses, the assumption is called into question.
+Checking model is an assessment of why a model is wrong. All models are wrong to some extent, but you must ensure the model is still fit for purpose. 
+
+One assumption of the globe tossing example is that each toss is independent of others. Looking at patterns over 9 tosses, the assumption is called into question.
 
 {:refdef: style="text-align: center;"}
 ![Other Ways](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/2022-06-08/other_ways.png){: style="text-align:center"}
 {: refdef}
 
-In this case, the number of times each subsequent toss switched between W/L is inconsistent with the expected posterior distribution. This implies that each toss is influeced to some degree by the previous toss. This would result in a posterior distribution that eventually converges to the true p, but would take longer to do so.
+In this case, the number of times each subsequent toss switched between W/L is inconsistent with the expected posterior distribution. This implies that each toss is influenced to some degree by the previous toss, resulting in a posterior distribution that eventually converges to the true p, but would take longer to do so.
