@@ -70,7 +70,7 @@ To make matters worse, it turns out that causally incorrect models can make bett
 
 Rather than relying on models alone, a complete picture requires background understanding of the question - and a reasonable causative mechanism to explain the plausibility of the data.
 
-This can be done with graphical causal models, the simplest version of which is a directed acrylic graph (DAG).
+This can be done with graphical causal models, the simplest version of which is a directed acyclic graph (DAG).
 
 {:refdef: style="text-align: center;"}
 ![DAG](https://raw.githubusercontent.com/valencia21/valencia21.github.io/master/_site/assets/img/2022-06-08/DAG.png){: style="text-align:center"}
